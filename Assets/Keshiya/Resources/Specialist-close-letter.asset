@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b930816c463224382bd9c95aab7739, type: 3}
+  m_Name: Specialist-close-letter
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobDefinition
+  id: close-letter
+  client: "\u4F1A\u793E\u54E1"
+  summary: "\u5B9B\u540D\u306E\u4E2D\u592E\u306EB\u3060\u3051\u6D88\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u4E21\u96A3\u306EA\u306F\u6B63\u3057\u3044\u6587\u5B57\u3067\u3059\u3002"
+  clientQuote: "\u6587\u5B57\u306E\u9593\u9694\u304C\u72ED\u304F\u3066\u3001\u81EA\u5206\u3067\u306F\u96A3\u307E\u3067\u6D88\u3057\u305D\u3046\u306A\u3093\u3067\u3059\u3002"
+  feature: "\u96A3\u63A5\u6587\u5B57 / \u5C0F\u3055\u306A\u4FEE\u6B63"
+  recommended: "\u666E\u901A\u3001\u7D30\u578B\u88FD\u56F3\u3001\u9AD8\u7D1A\u88FD\u56F3"
+  unlockRank: 
+  difficulty: 4
+  baseReward: 1700
+  referenceSeconds: 180
+  requiredErasure: 0.95
+  paper: {fileID: 11400000, guid: dbce0b8af3594a54b8d721526432e939, type: 2}
+  writing: {fileID: 11400000, guid: 9d089ed7c285e5140991233fc096e7ab, type: 2}
+  pressure: 0.5
+  category: "\u7CBE\u5BC6"
+  customDrawing: 1
+  targetPaths:
+  - points:
+    - {x: 0.100000, y: -0.228000}
+    - {x: 0.100000, y: 0.076000}
+    - {x: 0.200000, y: 0.076000}
+    - {x: 0.256000, y: 0.036000}
+    - {x: 0.256000, y: -0.028000}
+    - {x: 0.204000, y: -0.076000}
+    - {x: 0.100000, y: -0.076000}
+  - points:
+    - {x: 0.204000, y: -0.076000}
+    - {x: 0.264000, y: -0.124000}
+    - {x: 0.264000, y: -0.180000}
+    - {x: 0.204000, y: -0.228000}
+    - {x: 0.100000, y: -0.228000}
+  protectedPaths:
+  - points:
+    - {x: -0.300000, y: -0.228000}
+    - {x: -0.150000, y: 0.228000}
+    - {x: 0.000000, y: -0.228000}
+  - points:
+    - {x: -0.228000, y: -0.030000}
+    - {x: -0.072000, y: -0.030000}
+  - points:
+    - {x: 0.350000, y: -0.228000}
+    - {x: 0.500000, y: 0.228000}
+    - {x: 0.650000, y: -0.228000}
+  - points:
+    - {x: 0.422000, y: -0.030000}
+    - {x: 0.578000, y: -0.030000}
+  displayName: "\u8A70\u307E\u3063\u305F\u5B9B\u540D\u306E\u4E00\u6587\u5B57"
+  instruction: "\u5B9B\u540D\u306E\u4E2D\u592E\u306EB\u3060\u3051\u6D88\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u4E21\u96A3\u306EA\u306F\u6B63\u3057\u3044\u6587\u5B57\u3067\u3059\u3002"
+  precision: 1
+  letterCorrection: 0
+  paperFragility: 2
+  contentVersion: 0
+  minorProtectionLoss: 0.05
+  paperName: "\u8584\u3044\u4FBF\u7B8B"
+  targetOffset: 0.14
+  targetHalfLength: 1.35
+  targetHalfWidth: 0.018
+  protectedHalfWidth: 0.018
+  protectedHalfLength: 1.6
+  protectedSensitivity: 0.45
+  majorLoss: 0.2
+  majorLocalLoss: 0.95
+  protectionBonus: 400

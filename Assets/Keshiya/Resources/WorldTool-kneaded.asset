@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581883b43450f3449b3c1e23334e7421, type: 3}
+  m_Name: WorldTool-kneaded
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.EraserDefinition
+  category: "\u7279\u6B8A"
+  series: 
+  iconMotif: kneaded
+  questOnly: 0
+  specialKind: 1
+  adsorptionCapacity: 0.35
+  dirtyPowerFloor: 0.65
+  toastDistance: 90
+  toastPowerGain: 0.45
+  toastDamageGain: 1.6
+  usedColor: {r: 0.22, g: 0.23, b: 0.24, a: 1}
+  id: kneaded
+  shortName: "\u7DF4\u308A"
+  brand: "\u6D88\u3057\u5C4B\u9053\u5177\u5E97"
+  description: "\u9ED2\u925B\u3092\u5438\u7740\u3059\u308B\u67D4\u3089\u304B\u3044\u584A\u3002\u7D19\u306B\u306F\u512A\u3057\u3044\u3002\u9ED2\u305A\u3080\u307B\u3069\u5438\u7740\u306F\u5C11\u3057\u843D\u3061\u3001\u901A\u5E38\u306E\u30AB\u30B9\u306F\u51FA\u306A\u3044\u3002"
+  price: 700
+  iconScale: {x: 1, y: 1}
+  ballAffinity: 1
+  displayName: "\u7DF4\u308A\u6D88\u3057"
+  erasePower: 0.45
+  paperDamageMultiplier: 0.025
+  radius: 0.19
+  crumbAmount: 0.001
+  contactProfile: {fileID: 11400000, guid: ca7b425b4f9598a4fa227bfa048665bf, type: 2}
+  edgeProfile: {fileID: 11400000, guid: d215aa57276f30745b053f90673fc69f, type: 2}
+  cornerProfile: {fileID: 11400000, guid: 73c63aa29da00d2458516e7a8d868962, type: 2}
+  paperCareResponse: 1
+  edgeCornerWear: 0.15
+  minimumSharpness: 0.1
+  durability: 100
+  wearRate: 0.12
+  cornerWearRate: 0.026
+  highSpeedRisk: 0.3
+  minimumRemaining: 0.15
+  cornerSpread: 0.65
+  crumbSizeMultiplier: 1
+  reactionMultiplier: 1
+  bodyColor: {r: 0.83, g: 0.84, b: 0.81, a: 1}
+  labelColor: {r: 0.5976, g: 0.6048, b: 0.58320004, a: 1}
+  crumbColor: {r: 0.73, g: 0.72, b: 0.66, a: 1}
+  thinPaperStress: 0.08
+  thinPaperPickup: 1.35
+  protectedInkAbrasion: 0.08
+  crumbCohesion: 0.02
+  longCrumbPotential: 0.01
+  crumbValueMultiplier: 1
+  role: "\u5438\u7740 / \u7D19\u306B\u512A\u3057\u3044\u30FB\u901A\u5E38\u30AB\u30B9\u306A\u3057"
+  specialtyVersion: 0
+  equipment:
+    erasePower: 1
+    radius: 1
+    paperDamage: 1
+    crumbAmount: 1
+    durability: 1
+    crumbContinuity: 1
+    salePrice: 1
+    cornerWear: 1
+    precision: 1
+    wear: 1
+    protectedGlance: 1
+    longGrowth: 1
+    crumbTolerance: 0
+    ballYield: 1

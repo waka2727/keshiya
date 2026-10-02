@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b930816c463224382bd9c95aab7739, type: 3}
+  m_Name: WorldJob-late-manga
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobDefinition
+  id: late-manga
+  client: "\u6F2B\u753B\u5BB6"
+  summary: "\u4E09\u3064\u306E\u30B3\u30DE\u306B\u4E0B\u63CF\u304D\u304C\u6B8B\u3063\u3066\u3044\u307E\u3059\u3002\u30DA\u30F3\u7DDA\u3068\u67A0\u3092\u6B8B\u3057\u3066\u3001\u925B\u7B46\u3092\u6D88\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+  clientQuote: "\u6025\u3044\u3067\u3044\u308B\u306E\u306F\u79C1\u3060\u3051\u306A\u306E\u3067\u3001\u7DDA\u306F\u4E01\u5BE7\u306B\u304A\u9858\u3044\u3057\u307E\u3059\u3002"
+  feature: "\u5E83\u3044\u9818\u57DF\u30FB\u7DDA\u6CBF\u3044\u30FB\u4EA4\u70B9"
+  recommended: "\u666E\u901A\u3001\u7D30\u578B\u88FD\u56F3\u3001\u597D\u307F\u306E\u9053\u5177"
+  unlockRank: 
+  difficulty: 4
+  baseReward: 2600
+  referenceSeconds: 360
+  requiredErasure: 0.95
+  paper: {fileID: 11400000, guid: 9bf5d220f76629949bf41a0a3767007f, type: 2}
+  writing: {fileID: 11400000, guid: 23f33bf1f1f270742b9aa6cb303b9f3e, type: 2}
+  pressure: 1
+  category: "\u7CBE\u5BC6"
+  suppliedTool: {fileID: 0}
+  suppliedRemaining: 0.12
+  thankYou: 
+  customDrawing: 1
+  targetPaths:
+  - points:
+    - {x: -2.6, y: -1.68}
+    - {x: -1.2, y: -1.68}
+  - points:
+    - {x: -1.2, y: -1.6}
+    - {x: -1.2, y: 1.6}
+  - points:
+    - {x: -2.35, y: 0.6}
+    - {x: -1.9, y: 1.05}
+    - {x: -1.45, y: 0.6}
+  - points:
+    - {x: -2.37, y: -1.25}
+    - {x: -1.45, y: -1.19}
+  - points:
+    - {x: -2.37, y: -1.09}
+    - {x: -1.45, y: -1.0300001}
+  - points:
+    - {x: -2.37, y: -0.93}
+    - {x: -1.45, y: -0.87000006}
+  - points:
+    - {x: -2.37, y: -0.77}
+    - {x: -1.45, y: -0.71000004}
+  - points:
+    - {x: -2.37, y: -0.61}
+    - {x: -1.45, y: -0.5500001}
+  - points:
+    - {x: -2.37, y: -0.45000002}
+    - {x: -1.45, y: -0.39000008}
+  - points:
+    - {x: -2.37, y: -0.29000002}
+    - {x: -1.45, y: -0.23000008}
+  - points:
+    - {x: -2.37, y: -0.13000003}
+    - {x: -1.45, y: -0.07000008}
+  - points:
+    - {x: -2.37, y: 0.029999971}
+    - {x: -1.45, y: 0.089999914}
+  - points:
+    - {x: -2.37, y: 0.18999997}
+    - {x: -1.45, y: 0.24999991}
+  - points:
+    - {x: -0.75, y: -1.68}
+    - {x: 0.65, y: -1.68}
+  - points:
+    - {x: 0.65, y: -1.6}
+    - {x: 0.65, y: 1.6}
+  - points:
+    - {x: -0.49999997, y: 0.6}
+    - {x: -0.049999952, y: 1.05}
+    - {x: 0.39999998, y: 0.6}
+  - points:
+    - {x: -0.52, y: -1.25}
+    - {x: 0.39999998, y: -1.19}
+  - points:
+    - {x: -0.52, y: -1.09}
+    - {x: 0.39999998, y: -1.0300001}
+  - points:
+    - {x: -0.52, y: -0.93}
+    - {x: 0.39999998, y: -0.87000006}
+  - points:
+    - {x: -0.52, y: -0.77}
+    - {x: 0.39999998, y: -0.71000004}
+  - points:
+    - {x: -0.52, y: -0.61}
+    - {x: 0.39999998, y: -0.5500001}
+  - points:
+    - {x: -0.52, y: -0.45000002}
+    - {x: 0.39999998, y: -0.39000008}
+  - points:
+    - {x: -0.52, y: -0.29000002}
+    - {x: 0.39999998, y: -0.23000008}
+  - points:
+    - {x: -0.52, y: -0.13000003}
+    - {x: 0.39999998, y: -0.07000008}
+  - points:
+    - {x: -0.52, y: 0.029999971}
+    - {x: 0.39999998, y: 0.089999914}
+  - points:
+    - {x: -0.52, y: 0.18999997}
+    - {x: 0.39999998, y: 0.24999991}
+  - points:
+    - {x: 1.1, y: -1.68}
+    - {x: 2.5, y: -1.68}
+  - points:
+    - {x: 2.5, y: -1.6}
+    - {x: 2.5, y: 1.6}
+  - points:
+    - {x: 1.35, y: 0.6}
+    - {x: 1.8000001, y: 1.05}
+    - {x: 2.25, y: 0.6}
+  - points:
+    - {x: 1.33, y: -1.25}
+    - {x: 2.25, y: -1.19}
+  - points:
+    - {x: 1.33, y: -1.09}
+    - {x: 2.25, y: -1.0300001}
+  - points:
+    - {x: 1.33, y: -0.93}
+    - {x: 2.25, y: -0.87000006}
+  - points:
+    - {x: 1.33, y: -0.77}
+    - {x: 2.25, y: -0.71000004}
+  - points:
+    - {x: 1.33, y: -0.61}
+    - {x: 2.25, y: -0.5500001}
+  - points:
+    - {x: 1.33, y: -0.45000002}
+    - {x: 2.25, y: -0.39000008}
+  - points:
+    - {x: 1.33, y: -0.29000002}
+    - {x: 2.25, y: -0.23000008}
+  - points:
+    - {x: 1.33, y: -0.13000003}
+    - {x: 2.25, y: -0.07000008}
+  - points:
+    - {x: 1.33, y: 0.029999971}
+    - {x: 2.25, y: 0.089999914}
+  - points:
+    - {x: 1.33, y: 0.18999997}
+    - {x: 2.25, y: 0.24999991}
+  protectedPaths:
+  - points:
+    - {x: -2.75, y: -1.85}
+    - {x: -1.05, y: -1.85}
+    - {x: -1.05, y: 1.85}
+    - {x: -2.75, y: 1.85}
+    - {x: -2.75, y: -1.85}
+  - points:
+    - {x: -2.35, y: 0.75}
+    - {x: -1.9, y: 1.2}
+    - {x: -1.45, y: 0.75}
+  - points:
+    - {x: -0.9, y: -1.85}
+    - {x: 0.8000001, y: -1.85}
+    - {x: 0.8000001, y: 1.85}
+    - {x: -0.9, y: 1.85}
+    - {x: -0.9, y: -1.85}
+  - points:
+    - {x: -0.49999997, y: 0.75}
+    - {x: -0.049999952, y: 1.2}
+    - {x: 0.39999998, y: 0.75}
+  - points:
+    - {x: 0.95000005, y: -1.85}
+    - {x: 2.65, y: -1.85}
+    - {x: 2.65, y: 1.85}
+    - {x: 0.95000005, y: 1.85}
+    - {x: 0.95000005, y: -1.85}
+  - points:
+    - {x: 1.35, y: 0.75}
+    - {x: 1.8000001, y: 1.2}
+    - {x: 2.25, y: 0.75}
+  displayName: "\u6F2B\u753B\u5BB6\u306E\u4FEE\u7F85\u5834"
+  instruction: "\u4E09\u3064\u306E\u30B3\u30DE\u306B\u4E0B\u63CF\u304D\u304C\u6B8B\u3063\u3066\u3044\u307E\u3059\u3002\u30DA\u30F3\u7DDA\u3068\u67A0\u3092\u6B8B\u3057\u3066\u3001\u925B\u7B46\u3092\u6D88\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+  precision: 1
+  letterCorrection: 0
+  paperFragility: 1
+  contentVersion: 0
+  minorProtectionLoss: 0.05
+  paperName: "\u4E0A\u8CEA\u7D19"
+  targetOffset: 0.14
+  targetHalfLength: 1.35
+  targetHalfWidth: 0.018
+  protectedHalfWidth: 0.018
+  protectedHalfLength: 1.6
+  protectedSensitivity: 0.45
+  majorLoss: 0.2
+  majorLocalLoss: 0.95
+  protectionBonus: 400

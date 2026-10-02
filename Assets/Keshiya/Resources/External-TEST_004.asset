@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b930816c463224382bd9c95aab7739, type: 3}
+  m_Name: External-TEST_004
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobDefinition
+  id: TEST_004
+  client: "\u5B9F\u5BB6\u3092\u7247\u3065\u3051\u3066\u3044\u308B\u4EBA"
+  summary: "\u8584\u3044\u9752\u7070\u8272\u306E\u843D\u66F8\u304D\u3060\u3051\u6D88\u3057\u307E\u3059\u3002\u30EC\u30B7\u30D4\u672C\u6587\u3068\u53E4\u3044\u7D19\u3092\u5927\u5207\u306B\u3002"
+  clientQuote: "\u6BCD\u306E\u6599\u7406\u30CE\u30FC\u30C8\u304C\u51FA\u3066\u304D\u307E\u3057\u305F\u3002\u661F\u3068\u5909\u306A\u9854\u306F\u3001\u6614\u306E\u79C1\u304C\u63CF\u3044\u305F\u3082\u306E\u3067\u3059\u3002\u30EC\u30B7\u30D4\u306E\u6587\u5B57\u306F\u6B8B\u3057\u3066\u3082\u3089\u3048\u307E\u3059\u304B\u3002"
+  feature: "\u8584\u3044\u9752\u7070\u8272\u306F\u6D88\u3059 / \u6FC3\u3044\u5B8C\u6210\u7DDA\u306F\u6B8B\u3059"
+  recommended: "\u3084\u308F\u3089\u304B\u30FB\u7DF4\u308A\u6D88\u3057\u30FB\u9AD8\u7D1A\u88FD\u56F3"
+  unlockRank: 
+  difficulty: 5
+  baseReward: 2400
+  referenceSeconds: 420
+  requiredErasure: 0.95
+  paper: {fileID: 11400000, guid: 5e605440ee54938429583d29381f2585, type: 2}
+  writing: {fileID: 11400000, guid: 16aff7023c487914599a35399c051eb8, type: 2}
+  pressure: 1
+  category: "\u7CBE\u5BC6\u4FEE\u6B63"
+  suppliedTool: {fileID: 0}
+  suppliedRemaining: 0.12
+  thankYou: "\u3053\u306E\u5B57\u3092\u898B\u308B\u3068\u3001\u53F0\u6240\u306E\u3053\u3068\u3092\u601D\u3044\u51FA\u3057\u307E\u3059\u3002\u4ECA\u591C\u306F\u3053\u306E\u901A\u308A\u306B\u4F5C\u3063\u3066\u307F\u307E\u3059\u3002"
+  artwork: {fileID: 11400000, guid: 46018a8d47248e949b2a1c46288e41b7, type: 2}
+  externalTest: 1
+  layoutVersion: 0
+  detailResolution: 0
+  targetLineScale: 1
+  protectedLineScale: 1
+  targetOpacity: 1
+  targetTint: {r: 0.36, g: 0.43, b: 0.51, a: 1}
+  clearDraftStyle: 0
+  customDrawing: 0
+  targetPaths: []
+  protectedPaths: []
+  displayName: "\u6BCD\u306E\u30EC\u30B7\u30D4"
+  instruction: "\u8584\u3044\u9752\u7070\u8272\u306E\u843D\u66F8\u304D\u3060\u3051\u6D88\u3057\u307E\u3059\u3002\u30EC\u30B7\u30D4\u672C\u6587\u3068\u53E4\u3044\u7D19\u3092\u5927\u5207\u306B\u3002"
+  precision: 1
+  letterCorrection: 0
+  paperFragility: 1
+  contentVersion: 0
+  minorProtectionLoss: 0.05
+  paperName: "\u666E\u901A\u7D19"
+  targetOffset: 0.14
+  targetHalfLength: 1.35
+  targetHalfWidth: 0.018
+  protectedHalfWidth: 0.018
+  protectedHalfLength: 1.6
+  protectedSensitivity: 0.45
+  majorLoss: 0.2
+  majorLocalLoss: 0.95
+  protectionBonus: 400

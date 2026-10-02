@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 2
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 1
+    m_PVRFilteringGaussRadiusAO: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &313684238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313684240}
+  - component: {fileID: 313684239}
+  m_Layer: 0
+  m_Name: Keshiya Prototype 0.8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &313684239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313684238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa23fe341e819234f9e9466e2bdc5f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.PrototypeGame
+  Config: {fileID: 11400000, guid: 9d4f5477b9403364ea68b35cdc1bf923, type: 2}
+  Eraser: {fileID: 11400000, guid: 2b77c0697db84974e9c8eca03a52304c, type: 2}
+  Modifiers:
+    erasePower: 1
+    radius: 1
+    paperDamage: 1
+    crumbAmount: 1
+    durability: 1
+    crumbContinuity: 1
+    salePrice: 1
+    cornerWear: 1
+    precision: 1
+    wear: 1
+    protectedGlance: 1
+    longGrowth: 1
+    crumbTolerance: 0
+    ballYield: 1
+  ObjectShader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  PaperShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  OverlayShader: {fileID: 4800000, guid: 59d88d56d8e05fc4c868faff135c0612, type: 3}
+  ArtworkShader: {fileID: 4800000, guid: 3e9b31dfde7f5ff488caca860992f119, type: 3}
+  Feel: {fileID: 11400000, guid: e20c471f6de71354c80ec00dab283a03, type: 2}
+  EconomyConfig: {fileID: 11400000, guid: ba688cb6f10983d43b4a65f7c601d552, type: 2}
+  Catalog: {fileID: 11400000, guid: 615c086a8590f6f44812f4729a6f35e5, type: 2}
+  Jobs:
+  - {fileID: 11400000, guid: a05759c3240a72b4aaad0823fda4764c, type: 2}
+  - {fileID: 11400000, guid: 8a77d411a513cd74c822c88843c9359b, type: 2}
+  - {fileID: 11400000, guid: 55f8da77f3c7c0548bda64f4b8126213, type: 2}
+  - {fileID: 11400000, guid: 712ea8f9ae9e6f84b9455aac57dd8859, type: 2}
+  - {fileID: 11400000, guid: 68e2ed7acfe1862468cee9c86d25e893, type: 2}
+  - {fileID: 11400000, guid: 05e695e48dabcdc4faf8d9e6949de1dc, type: 2}
+  - {fileID: 11400000, guid: 1ebc40fa544bd7d498133e7ba96751a5, type: 2}
+  - {fileID: 11400000, guid: 888602a62390f7c4e8245d77449ce85c, type: 2}
+  - {fileID: 11400000, guid: 2b46ae488e5a9c2438faf4e17aa51455, type: 2}
+  - {fileID: 11400000, guid: 36d3417d8df636e46bfcc66f46ffcba1, type: 2}
+  - {fileID: 11400000, guid: 3ca00243cd753304cb9b2a0548905d03, type: 2}
+  - {fileID: 11400000, guid: f794611dbe4e46a44bf3d45873d25d12, type: 2}
+  - {fileID: 11400000, guid: bd6de9be5ee90094cb8d011cde9d8c63, type: 2}
+  - {fileID: 11400000, guid: f5ded313bef28954cbb5d947c89f2899, type: 2}
+  - {fileID: 11400000, guid: 1f64d6e9b64ab464189aa4cd4169b8b9, type: 2}
+  - {fileID: 11400000, guid: 84ded05dfe63e3e4eb6b2c888e174303, type: 2}
+  - {fileID: 11400000, guid: 5491896806f5da24c8fd17e56ba0c9cb, type: 2}
+  - {fileID: 11400000, guid: 698c2854ea783a045b7ab3ca5d46a5f3, type: 2}
+  - {fileID: 11400000, guid: 2106fbb90a5fd9c459ab3f4d3a61157a, type: 2}
+  - {fileID: 11400000, guid: 3945984d13f76d645a0c81387ad81714, type: 2}
+  - {fileID: 11400000, guid: 22ec345d21382b141a4dff53f0ac9873, type: 2}
+  - {fileID: 11400000, guid: 6ce3f4d93aa2dc24c9ec59d92052d41e, type: 2}
+  - {fileID: 11400000, guid: 45a9146283a77a242b284a6d0965fe6f, type: 2}
+  - {fileID: 11400000, guid: cc46bd86244f89543aa765b869c789c0, type: 2}
+  - {fileID: 11400000, guid: eb0b93ace0becfb4c9cba09364736243, type: 2}
+  - {fileID: 11400000, guid: 51e679b4df87de5468c3024992a746d4, type: 2}
+  - {fileID: 11400000, guid: 7c2cc6bd16056124bb52f35189215850, type: 2}
+  - {fileID: 11400000, guid: d7fe7d5dc578ebf4a896243346866338, type: 2}
+--- !u!4 &313684240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313684238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 313684240}

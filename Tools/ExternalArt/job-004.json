@@ -1,0 +1,15 @@
+{
+  "client": "実家を片づけている人",
+  "paper": "old",
+  "writing": "hb",
+  "baseReward": 2400,
+  "difficulty": 5,
+  "clientQuote": "母の料理ノートが出てきました。星と変な顔は、昔の私が描いたものです。レシピの文字は残してもらえますか。",
+  "instruction": "薄い青灰色の落書きだけ消します。レシピ本文と古い紙を大切に。",
+  "thankYou": "この字を見ると、台所のことを思い出します。今夜はこの通りに作ってみます。",
+  "recommended": "やわらか・練り消し・高級製図",
+  "precision": true,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 420,
+  "supply": false
+}

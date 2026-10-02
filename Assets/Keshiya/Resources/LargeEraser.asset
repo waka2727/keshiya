@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581883b43450f3449b3c1e23334e7421, type: 3}
+  m_Name: LargeEraser
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.EraserDefinition
+  id: large
+  shortName: "\u5927\u578B"
+  brand: "\u6D88\u3057\u5C4B\u9053\u5177\u5E97"
+  description: "\u5927\u304D\u306A\u4E0B\u66F8\u304D\u306B\u3001\u3069\u3093\u3068\u4E00\u9762\u3002\u96A3\u306E\u6587\u5B57\u306B\u306F\u8FD1\u3065\u304D\u3059\u304E\u306A\u3044\u3053\u3068\u3002\u6E1B\u308B\u91CF\u3082\u5927\u304D\u3081\u3067\u3059\u3002"
+  price: 1250
+  iconScale: {x: 1, y: 1.3}
+  ballAffinity: 1
+  displayName: "\u5927\u578B\u6D88\u3057\u30B4\u30E0"
+  erasePower: 1.15
+  paperDamageMultiplier: 1
+  radius: 0.5
+  crumbAmount: 1.3
+  contactProfile: {fileID: 11400000, guid: 2a7654f64233d2f41b797c043e40e390, type: 2}
+  edgeProfile: {fileID: 11400000, guid: a612db844c919ea458140d28d3cfa516, type: 2}
+  cornerProfile: {fileID: 11400000, guid: 4d72163dc0f5b5940b175be1cda22d87, type: 2}
+  paperCareResponse: 1
+  edgeCornerWear: 0.15
+  minimumSharpness: 0.1
+  durability: 100
+  wearRate: 0.48
+  cornerWearRate: 0.03
+  highSpeedRisk: 1
+  minimumRemaining: 0.15
+  cornerSpread: 0.65
+  crumbSizeMultiplier: 1
+  reactionMultiplier: 1
+  bodyColor: {r: 0.95, g: 0.92, b: 0.84, a: 1}
+  labelColor: {r: 0.7, g: 0.36, b: 0.2, a: 1}
+  crumbColor: {r: 0.73, g: 0.72, b: 0.66, a: 1}
+  thinPaperStress: 1
+  thinPaperPickup: 1
+  protectedInkAbrasion: 1
+  crumbCohesion: 0.5
+  longCrumbPotential: 1
+  crumbValueMultiplier: 1
+  role: "\u5E83\u3044\u9762 / \u7D30\u90E8\u306F\u82E6\u624B"
+  specialtyVersion: 0
+  equipment:
+    erasePower: 1
+    radius: 1
+    paperDamage: 1
+    crumbAmount: 1
+    durability: 1
+    crumbContinuity: 1
+    salePrice: 1
+    cornerWear: 1
+    precision: 1
+    wear: 1
+    protectedGlance: 1
+    longGrowth: 1
+    crumbTolerance: 0
+    ballYield: 1

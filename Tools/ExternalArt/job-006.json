@@ -1,0 +1,15 @@
+{
+  "client": "少し困った顔の学生",
+  "paper": "ordinary",
+  "writing": "hb",
+  "baseReward": 2200,
+  "difficulty": 5,
+  "clientQuote": "点数のところだけ、お願いします。百の「1」と、隣の最初の「0」だけです。答えは消さないでください。",
+  "instruction": "右上の「100点」から「10」だけ消し、「0点」を残してください。答案本文と赤い採点は保護対象です。",
+  "thankYou": "これでいいんです。理由は……また今度。細かいところまで助かりました。",
+  "recommended": "細型製図・辺／角・ズーム",
+  "precision": true,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 420,
+  "supply": false
+}

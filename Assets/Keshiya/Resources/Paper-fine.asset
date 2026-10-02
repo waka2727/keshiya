@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196e0285a58900641ab6857646ba14c2, type: 3}
+  m_Name: Paper-fine
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.PaperDefinition
+  id: fine
+  displayName: "\u4E0A\u8CEA\u7D19"
+  description: "\u6ED1\u3089\u304B\u3067\u4E08\u592B\u3002\u50B7\u306F\u4ED5\u4E0A\u304C\u308A\u8A55\u4FA1\u306B\u5F37\u304F\u97FF\u304D\u307E\u3059\u3002"
+  toolTendency: "\u666E\u901A\u30FB\u9AD8\u7D1A\u88FD\u56F3"
+  thickness: 1.1
+  durability: 1.15
+  frictionResistance: 1.1
+  localWearResistance: 1.1
+  surfaceDrag: 1
+  fragility: 1
+  qualitySensitivity: 2

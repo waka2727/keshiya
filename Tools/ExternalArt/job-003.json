@@ -1,0 +1,15 @@
+{
+  "client": "徹夜明けの漫画家",
+  "paper": "fine",
+  "writing": "2b",
+  "baseReward": 2600,
+  "difficulty": 5,
+  "clientQuote": "下書きけしをおnがいします。\n\n黒いペンのせnは完成線です。\n薄い鉛筆線だけ消してくだしあ。\n\n締切につては聞かないでｋださい。\n\n……昨日でしあt。",
+  "instruction": "青灰色の鉛筆下書きだけ消します。黒い完成線とコマ枠を残してください。",
+  "thankYou": "たすかりました。\n\n下書きって、\n消えてしまえば誰にも見えないんですよね。\n\n……まあ、\n描いた本人は全部おぼえてますけｄ。\n\nこれで原稿おくれまｓ\nほんとに助かりｍした。\n\nじゃあ次のげんこ――\n\n……いや寝ます。\n\nおやすみなさう。",
+  "recommended": "普通・細型製図・面／辺／角",
+  "precision": true,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 420,
+  "supply": false
+}

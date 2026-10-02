@@ -1,0 +1,25 @@
+using System.Collections;
+using System.IO;
+using System.Text;
+using UnityEngine;
+namespace Keshiya {
+ public sealed class RuntimeShopChecks:MonoBehaviour {
+  public PrototypeGame Game;int count,fail;string directory;readonly StringBuilder report=new StringBuilder();
+  void Awake(){Application.runInBackground=true;}
+  void Check(bool ok,string name){count++;if(!ok)fail++;report.AppendLine((ok?"PASS: ":"FAIL: ")+name);Debug.Log((ok?"PASS: ":"FAIL: ")+name);}
+  IEnumerator Capture(string name){yield return new WaitForEndOfFrame();ScreenCapture.CaptureScreenshot(Path.Combine(directory,name+".png"));yield return new WaitForSecondsRealtime(.25f);}
+  IEnumerator Start(){directory=Path.Combine(Application.dataPath,"../TestResults-0.6");Directory.CreateDirectory(directory);Game.Controller.ExternalInput=true;yield return new WaitForSecondsRealtime(.8f);
+   Check(Game.BoardEnabled&&Game.Session.Phase==WorkPhase.Board,"Starts at job board");yield return Capture("01-board");Game.OpenShop();Check(Game.ShopOpen&&Game.InputBlocked,"Optional shop opens and blocks paper input");Check(Game.Catalog.tools.Length>=7,"Seven products loaded");Game.ShopHUD.ChooseProduct(3);Check(!Game.ShopHUD.BuySelected(),"UI rejects unaffordable purchase");yield return Capture("02-shop-unaffordable");
+   Game.Economy.Wallet.DebugCredit(20000);for(int i=3;i<7;i++){Game.ShopHUD.ChooseProduct(i);long balance=Game.Economy.Wallet.Balance;Check(Game.ShopHUD.BuySelected()&&Game.Economy.Wallet.Balance==balance-Game.Catalog.tools[i].price,"Shop purchase "+i);yield return Capture("03-product-"+i);}
+   Game.ShopHUD.ChooseProduct(3);Game.ShopHUD.BuySelected();Check(Game.Tools.items.Count==8,"Duplicate purchase adds individual");var old=Game.Tools.items[3];old.state.Use(35,ContactMode.Corner,Game.Catalog.tools[3],Game.Modifiers);var fresh=Game.Tools.items[7];Check(fresh.state.Remaining(Game.Catalog.tools[3],Game.Modifiers)==1&&old.state.CornerSharpness<fresh.state.CornerSharpness,"New copy does not reset worn copy");
+   Game.OpenShop(true);Game.SelectOwned(fresh.instanceId);Check(Game.InventoryOpen&&Game.ActiveTool==fresh,"Inventory selects exact copy");yield return Capture("04-inventory");Game.CloseShop();Game.ChooseJob(1);yield return Capture("05-preparation");Game.BeginWork();Check(!Game.InputBlocked&&Game.JobIndex==1&&Game.ActiveTool==fresh,"Purchased individual enters precision work");
+   for(int i=0;i<7;i++){Game.Controller.HandleKeyDown((KeyCode)((int)KeyCode.Alpha1+i));Check(Game.ToolIndex==i,"Number shortcut "+(i+1));Check(Game.Contact.HalfSize==Game.Presentation.Footprint.HalfSize,"Rendered contact matches tool "+i);}
+   Game.SelectOwned(fresh.instanceId);Game.SelectMode(ContactMode.Corner);Game.Controller.ProcessInput(new Vector2(.5f,0),true,true,.02f);yield return Capture("06-precision-tool");Game.Controller.ResetContact();
+   var before=Game.ActiveTool;Game.Controller.HandleKeyDown(KeyCode.Tab);Check(Game.ActiveTool!=before,"Tab cycles individual inventory");Game.Controller.HandleKeyDown(KeyCode.T);Check(Game.InventoryOpen&&Game.InputBlocked,"T opens inventory during work");Game.Controller.HandleKeyDown(KeyCode.T);Check(!Game.InventoryOpen&&!Game.InputBlocked,"T returns to same work");
+   Game.SelectTool(4);Game.SelectMode(ContactMode.Face);Game.Controller.ProcessInput(Vector2.zero,true,true,.02f);yield return Capture("07-large-tool");Game.Controller.ResetContact();float erased=Game.Paper.Drawing.Erased;Game.ActiveState.Use(100000,ContactMode.Face,Game.Eraser,Game.Modifiers);Game.Rub(Vector2.zero,Vector2.one,4);Check(Game.ActiveState.Exhausted&&Game.Paper.Drawing.Erased==erased,"Empty tool cannot erase");Game.Controller.HandleKeyDown(KeyCode.Tab);Check(Game.HasUsableTool,"Can switch after depletion");
+   Game.ShowBoard();Game.ChooseJob(1);Game.SelectTool(1);Game.SelectMode(ContactMode.Corner);Game.BeginWork();for(int pass=0;pass<45&&!Game.CurrentJob.CanComplete(Game.Paper);pass++){foreach(var path in LetterLayout.Target)for(int k=1;k<path.Length;k++)Game.Rub(path[k-1],path[k],3);yield return null;}
+   Check(Game.CurrentJob.CanComplete(Game.Paper)&&Game.Paper.Protection.Loss==0,"Precision job still completes without damaging protected letters");long pay=Game.Economy.Wallet.Balance;Game.CurrentJob.Tick(100000);Game.Finish();Check(Game.Session.Phase==WorkPhase.Result&&Game.Economy.Wallet.Balance==pay+Game.CurrentJob.Result.Total&&Game.CurrentJob.Result.speed==0,"Slow work pays full reward and returns result");Game.RollCrumbs();long cash=Game.Economy.Wallet.Balance;long sale=Game.Economy.SellBall();Check(Game.Economy.Wallet.Balance==cash+sale&&Game.Economy.Wallet.JobIncome>0&&Game.Economy.Wallet.CrumbIncome>0,"Job and crumb income share spendable wallet but separate ledgers");yield return Capture("08-result");Game.OpenShop();Check(Game.ShopOpen,"Result links back to shop");Game.CloseShop();Game.ShowBoard();Game.ChooseJob(0);Game.BeginWork();Check(Game.JobIndex==0&&!Game.CurrentJob.Completed,"Next job starts after purchase and reward");
+   File.WriteAllText(Path.Combine(directory,"runtime.txt"),report+$"Checks={count}; Failures={fail}\n");Application.Quit(fail==0?0:1);
+  }
+ }
+}

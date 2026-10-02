@@ -1,0 +1,15 @@
+{
+  "client": "美術学校の学生",
+  "paper": "drawing",
+  "writing": "4b",
+  "baseReward": 2100,
+  "difficulty": 2,
+  "clientQuote": "ずいぶん描き直したんですが、構図を変えることにしました。全部消して構いません。同じ紙で、もう一回やってみます。",
+  "instruction": "濃い4Bの没ラフを全面消去します。残す線はありません。",
+  "thankYou": "おお、ここまで戻るんですね。次の構図、もう決めてきました。",
+  "recommended": "大型・普通・砂消し",
+  "precision": false,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 240,
+  "supply": false
+}

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581883b43450f3449b3c1e23334e7421, type: 3}
+  m_Name: WorldTool-radish
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.EraserDefinition
+  category: "\u91CE\u83DC"
+  series: "\u91CE\u83DC\u30B7\u30EA\u30FC\u30BA"
+  iconMotif: radish
+  questOnly: 0
+  specialKind: 0
+  adsorptionCapacity: 0.35
+  dirtyPowerFloor: 0.65
+  toastDistance: 90
+  toastPowerGain: 0.45
+  toastDamageGain: 1.6
+  usedColor: {r: 0.25, g: 0.23, b: 0.2, a: 1}
+  id: radish
+  shortName: "\u3060\u3044\u3053\u3093"
+  brand: "\u6D88\u3057\u5C4B\u9053\u5177\u5E97"
+  description: "\u767D\u3044\u90E8\u5206\u3092\u4F7F\u3063\u3066\u304F\u3060\u3055\u3044\u3002\u5E83\u3044\u4ED5\u4E8B\u3092\u306E\u3093\u3073\u308A\u3068\u3002"
+  price: 800
+  iconScale: {x: 0.6, y: 1.1}
+  ballAffinity: 1
+  displayName: "\u3060\u3044\u3053\u3093\u6D88\u3057"
+  erasePower: 0.82
+  paperDamageMultiplier: 0.4
+  radius: 0.3
+  crumbAmount: 1
+  contactProfile: {fileID: 11400000, guid: a1320a5ae0a9fe347953373c778d1a52, type: 2}
+  edgeProfile: {fileID: 11400000, guid: 2ba6ea6f9fb68c5408e6de283b89c299, type: 2}
+  cornerProfile: {fileID: 11400000, guid: 8e7428350d484e14085ce22f3bf19bb6, type: 2}
+  paperCareResponse: 1
+  edgeCornerWear: 0.15
+  minimumSharpness: 0.1
+  durability: 100
+  wearRate: 0.3
+  cornerWearRate: 0.026
+  highSpeedRisk: 1
+  minimumRemaining: 0.15
+  cornerSpread: 0.65
+  crumbSizeMultiplier: 1
+  reactionMultiplier: 1
+  bodyColor: {r: 0.92, g: 0.94, b: 0.8, a: 1}
+  labelColor: {r: 0.66240007, g: 0.6768, b: 0.57600003, a: 1}
+  crumbColor: {r: 0.73, g: 0.72, b: 0.66, a: 1}
+  thinPaperStress: 0.7
+  thinPaperPickup: 1
+  protectedInkAbrasion: 0.6
+  crumbCohesion: 0.55
+  longCrumbPotential: 0.85
+  crumbValueMultiplier: 1
+  role: "\u8DA3\u5473\u306E\u9053\u5177 / \u91CE\u83DC\u30B7\u30EA\u30FC\u30BA"
+  specialtyVersion: 0
+  equipment:
+    erasePower: 1
+    radius: 1
+    paperDamage: 1
+    crumbAmount: 1
+    durability: 1
+    crumbContinuity: 1
+    salePrice: 1
+    cornerWear: 1
+    precision: 1
+    wear: 1
+    protectedGlance: 1
+    longGrowth: 1
+    crumbTolerance: 0
+    ballYield: 1

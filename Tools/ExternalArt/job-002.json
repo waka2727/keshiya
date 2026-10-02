@@ -1,0 +1,15 @@
+{
+  "client": "美咲",
+  "paper": "thin",
+  "writing": "hb",
+  "baseReward": 1600,
+  "difficulty": 4,
+  "clientQuote": "書き終えてから、一文字多いことに気づきました。そこだけお願いできますか。ほかの言葉は、このまま届けたいんです。",
+  "instruction": "「していまます」の余計な二つ目の「ま」だけ消してください。前後の文章は残します。",
+  "thankYou": "これで封をできます。小さなところまで、ありがとうございました。",
+  "recommended": "細型製図・角・ズーム",
+  "precision": true,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 420,
+  "supply": false
+}

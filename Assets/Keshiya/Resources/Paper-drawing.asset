@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196e0285a58900641ab6857646ba14c2, type: 3}
+  m_Name: Paper-drawing
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.PaperDefinition
+  id: drawing
+  displayName: "\u753B\u7528\u7D19"
+  description: "\u539A\u304F\u4E08\u592B\u3002\u5C11\u3057\u7C97\u3044\u8868\u9762\u3002"
+  toolTendency: "\u666E\u901A\u30FB\u5927\u578B"
+  thickness: 1.6
+  durability: 1.5
+  frictionResistance: 1.2
+  localWearResistance: 1.5
+  surfaceDrag: 1.08
+  fragility: 1
+  qualitySensitivity: 1

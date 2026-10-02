@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c99bd3d9cf65040bee540bd92a4b18, type: 3}
+  m_Name: Artwork-TEST_002
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobArtworkData
+  paper: {fileID: 2800000, guid: 537c6aa025000f241ab69f860832c98b, type: 3}
+  protectedImage: {fileID: 2800000, guid: 646b8dda696ac8c478e0f9bce28831af, type: 3}
+  erasable: {fileID: 2800000, guid: 247bcd568cfb6d343902722118bc075b, type: 3}
+  eraseMask: {fileID: 2800000, guid: 0364b08bcedad384e85de69f0b7e916a, type: 3}
+  protectMask: {fileID: 2800000, guid: 4fe3c6199df4fef438a24b5b0e398a3e, type: 3}
+  completePreview: {fileID: 2800000, guid: af9c565f091f74a40862564b8a860cef, type: 3}
+  initialPreview: {fileID: 2800000, guid: 4d530d8a747333349b8510b7b2a69e29, type: 3}
+  worldSize: {x: 5, y: 7.07258}
+  sourceFolder: Tools/ExternalArt/Source/TEST_002
+  manifestHash: 108eaa1990880bb3da766c98bf4d3292
+  testStrokes:
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: -0.024193548, y: -0.024193546}
+    - {x: 0.044354837, y: -0.024193546}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: -0.016129032, y: -0.05241935}
+    - {x: 0.03629032, y: -0.05241935}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: -0.028225806, y: -0.08064515}
+    - {x: 0.032258064, y: -0.08064515}

@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b930816c463224382bd9c95aab7739, type: 3}
+  m_Name: Specialist-extra-stroke
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobDefinition
+  id: extra-stroke
+  client: "\u6587\u5177\u5E97\u306E\u5E97\u4E3B"
+  summary: "F\u306B\u4F59\u5206\u306A\u4E0B\u7DDA\u3092\u66F8\u3044\u3066\u3057\u307E\u3044\u307E\u3057\u305F\u3002\u4E0B\u306E\u77ED\u3044\u4E00\u753B\u3060\u3051\u6D88\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+  clientQuote: "\u6E05\u66F8\u7528\u306E\u4E0A\u8CEA\u7D19\u3067\u3059\u3002\u5C0F\u3055\u3044\u4E00\u753B\u3060\u3051\u3001\u304A\u9858\u3044\u3057\u307E\u3059\u3002"
+  feature: "\u4E00\u753B\u4FEE\u6B63 / \u4E0A\u8CEA\u7D19"
+  recommended: "\u7D30\u578B\u88FD\u56F3\u3001\u666E\u901A\u3001\u9AD8\u7D1A\u88FD\u56F3"
+  unlockRank: 
+  difficulty: 4
+  baseReward: 2100
+  referenceSeconds: 180
+  requiredErasure: 0.95
+  paper: {fileID: 11400000, guid: 9bf5d220f76629949bf41a0a3767007f, type: 2}
+  writing: {fileID: 11400000, guid: 9d089ed7c285e5140991233fc096e7ab, type: 2}
+  pressure: 1.3
+  category: "\u7CBE\u5BC6"
+  customDrawing: 1
+  targetPaths:
+  - points:
+    - {x: 0.08, y: -0.25}
+    - {x: 0.38, y: -0.25}
+  protectedPaths:
+  - points:
+    - {x: 0, y: -0.3}
+    - {x: 0, y: 0.3}
+    - {x: 0.4, y: 0.3}
+  - points:
+    - {x: 0, y: 0.04}
+    - {x: 0.32, y: 0.04}
+  displayName: "文字の余分な一画"
+  instruction: "F\u306B\u4F59\u5206\u306A\u4E0B\u7DDA\u3092\u66F8\u3044\u3066\u3057\u307E\u3044\u307E\u3057\u305F\u3002\u4E0B\u306E\u77ED\u3044\u4E00\u753B\u3060\u3051\u6D88\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
+  precision: 1
+  letterCorrection: 0
+  paperFragility: 1
+  contentVersion: 0
+  minorProtectionLoss: 0.05
+  paperName: "\u4E0A\u8CEA\u7D19"
+  targetOffset: 0.14
+  targetHalfLength: 1.35
+  targetHalfWidth: 0.018
+  protectedHalfWidth: 0.018
+  protectedHalfLength: 1.6
+  protectedSensitivity: 0.45
+  majorLoss: 0.2
+  majorLocalLoss: 0.95
+  protectionBonus: 400

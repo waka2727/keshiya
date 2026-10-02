@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cf4c143972bd34ba110a4bc5f22ac9, type: 3}
+  m_Name: CrumbEconomyConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.CrumbEconomyConfig
+  centimetersPerUnit: 6
+  gramsPerUnit: 0.06
+  longMinimum: 5
+  turnDegrees: 42
+  speedJumpRatio: 1.7
+  minimumSpeed: 0.4
+  maximumSpeed: 8
+  idleReleaseSeconds: 0.45
+  rescueSeconds: 6
+  maximumLength: 80
+  brittleLength: 2
+  priceCurve: 0.08
+  ballPricePerGram: 20
+  worldUnitsPerCm: 0.1
+  paperPieceCapacity: 24
+  inventoryCapacity: 128
+  faceGrowth: 1
+  edgeGrowth: 0.85
+  cornerGrowth: 0

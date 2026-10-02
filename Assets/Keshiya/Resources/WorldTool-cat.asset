@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 581883b43450f3449b3c1e23334e7421, type: 3}
+  m_Name: WorldTool-cat
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.EraserDefinition
+  category: "\u52D5\u7269"
+  series: "\u3069\u3046\u3076\u3064\u30B7\u30EA\u30FC\u30BA"
+  iconMotif: cat
+  questOnly: 0
+  specialKind: 0
+  adsorptionCapacity: 0.35
+  dirtyPowerFloor: 0.65
+  toastDistance: 90
+  toastPowerGain: 0.45
+  toastDamageGain: 1.6
+  usedColor: {r: 0.25, g: 0.23, b: 0.2, a: 1}
+  id: cat
+  shortName: "\u306D\u3053"
+  brand: "\u6D88\u3057\u5C4B\u9053\u5177\u5E97"
+  description: "\u4ED5\u4E8B\u4E2D\u3082\u673A\u306B\u4E00\u5339\u3002\u901F\u3055\u3088\u308A\u3001\u3053\u306E\u9854\u3067\u9078\u3076\u4EBA\u3078\u3002"
+  price: 1300
+  iconScale: {x: 1, y: 1}
+  ballAffinity: 1
+  displayName: "\u306D\u3053\u6D88\u3057"
+  erasePower: 0.86
+  paperDamageMultiplier: 0.65
+  radius: 0.25
+  crumbAmount: 0.9
+  contactProfile: {fileID: 11400000, guid: ad0a1db4e7dbff64f8e7b3706827a8e2, type: 2}
+  edgeProfile: {fileID: 11400000, guid: d249e5479983d2b46b25cf77699325ce, type: 2}
+  cornerProfile: {fileID: 11400000, guid: 4a7a9a1446cc03844a8d7c3cb645f5c3, type: 2}
+  paperCareResponse: 1
+  edgeCornerWear: 0.15
+  minimumSharpness: 0.1
+  durability: 100
+  wearRate: 0.25
+  cornerWearRate: 0.026
+  highSpeedRisk: 1
+  minimumRemaining: 0.15
+  cornerSpread: 0.65
+  crumbSizeMultiplier: 1
+  reactionMultiplier: 1
+  bodyColor: {r: 0.76, g: 0.72, b: 0.65, a: 1}
+  labelColor: {r: 0.5472, g: 0.5184, b: 0.468, a: 1}
+  crumbColor: {r: 0.73, g: 0.72, b: 0.66, a: 1}
+  thinPaperStress: 0.7
+  thinPaperPickup: 1
+  protectedInkAbrasion: 0.6
+  crumbCohesion: 0.55
+  longCrumbPotential: 0.85
+  crumbValueMultiplier: 1
+  role: "\u8DA3\u5473\u306E\u9053\u5177 / \u3069\u3046\u3076\u3064\u30B7\u30EA\u30FC\u30BA"
+  specialtyVersion: 0
+  equipment:
+    erasePower: 1
+    radius: 1
+    paperDamage: 1
+    crumbAmount: 1
+    durability: 1
+    crumbContinuity: 1
+    salePrice: 1
+    cornerWear: 1
+    precision: 1
+    wear: 1
+    protectedGlance: 1
+    longGrowth: 1
+    crumbTolerance: 0
+    ballYield: 1

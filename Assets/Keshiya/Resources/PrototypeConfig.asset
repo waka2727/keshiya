@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7507921517b0e4478660975786af58e, type: 3}
+  m_Name: PrototypeConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.PrototypeConfig
+  resolution: 512
+  paperSize: {x: 7, y: 5}
+  protectedGlanceExponent: 2
+  senseMinimumInk: 0.002
+  optimalSpeed: 4
+  dangerousSpeed: 16
+  maximumSpeed: 35
+  wearStartSpeed: 12
+  tuningVersion: 2
+  highSpeedDamage: 0.16
+  wearDamage: 0.035
+  wearThreshold: 7
+  wearRecovery: 0.8
+  completionThreshold: 0.95
+  severeDamageThreshold: 0.85
+  damageFreeTolerance: 0.00001
+  baseReward: 1000
+  finishBonus: 300
+  pristineBonus: 250
+  speedBonus: 300
+  referenceSeconds: 120
+  crumbCapacity: 350
+  crumbSpacing: 0.09

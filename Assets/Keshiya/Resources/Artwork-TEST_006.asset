@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c99bd3d9cf65040bee540bd92a4b18, type: 3}
+  m_Name: Artwork-TEST_006
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobArtworkData
+  paper: {fileID: 2800000, guid: 1a7531ddc415b924999a82e3be675139, type: 3}
+  protectedImage: {fileID: 2800000, guid: bc9669754a454964aa3695e0be5530c2, type: 3}
+  erasable: {fileID: 2800000, guid: 6759a116be858c140a7b80541c5bc424, type: 3}
+  eraseMask: {fileID: 2800000, guid: d7d5b9d9e6040d2458e9fa257a38eda1, type: 3}
+  protectMask: {fileID: 2800000, guid: cbe0ef04b1d4a4b48ba538137f43daf4, type: 3}
+  completePreview: {fileID: 2800000, guid: 09fb124325578ca45841b282ecd3ec86, type: 3}
+  initialPreview: {fileID: 2800000, guid: 39634375c57343c4ab2070e5c5ddb9bc, type: 3}
+  worldSize: {x: 5, y: 7.07258}
+  sourceFolder: Tools/ExternalArt/Source/TEST_006
+  manifestHash: 56b7e90935c80c58bff427a931637985
+  testStrokes:
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.1935484, y: 2.4879029}
+    - {x: 1.2137097, y: 2.4879029}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.2782258, y: 2.4879029}
+    - {x: 1.3387097, y: 2.4879029}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.1935484, y: 2.4596772}
+    - {x: 1.2137097, y: 2.4596772}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.266129, y: 2.4596772}
+    - {x: 1.2903225, y: 2.4596772}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.3306452, y: 2.4596772}
+    - {x: 1.3508065, y: 2.4596772}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.1935484, y: 2.4314513}
+    - {x: 1.2137097, y: 2.4314513}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.266129, y: 2.4314513}
+    - {x: 1.2862903, y: 2.4314513}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.3306452, y: 2.4314513}
+    - {x: 1.3548387, y: 2.4314513}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.1935484, y: 2.4032257}
+    - {x: 1.2137097, y: 2.4032257}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.266129, y: 2.4032257}
+    - {x: 1.2862903, y: 2.4032257}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.3306452, y: 2.4032257}
+    - {x: 1.3508065, y: 2.4032257}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.1935484, y: 2.3749998}
+    - {x: 1.2137097, y: 2.3749998}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.2701613, y: 2.3749998}
+    - {x: 1.2943548, y: 2.3749998}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.326613, y: 2.3749998}
+    - {x: 1.3467742, y: 2.3749998}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.1975807, y: 2.3467739}
+    - {x: 1.2056452, y: 2.3467739}
+  - workMode: 0
+    workAngle: 0
+    points:
+    - {x: 1.2943548, y: 2.3467739}
+    - {x: 1.3225807, y: 2.3467739}
