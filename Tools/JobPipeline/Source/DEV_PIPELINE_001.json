@@ -1,0 +1,70 @@
+{
+  "id": "DEV_PIPELINE_001",
+  "title": "配達メモの訂正（開発検証専用）",
+  "clientId": "CLIENT_DEV_PIPELINE",
+  "clientName": "開発検証",
+  "clientLetter": "日付だけを消してください。宛名は残してください。",
+  "workInstruction": "青灰色の日付を消し、濃い宛名を残す。",
+  "completionMessage": "生成と判定の確認ができました。",
+  "paperAsset": "Assets/Keshiya/Resources/Paper-ordinary.asset",
+  "writingAsset": "Assets/Keshiya/Resources/Writing-hb.asset",
+  "runtimeAsset": "Assets/Keshiya/Jobs/Editor/Generated/DEV_PIPELINE_001.asset",
+  "artworkFolder": "Assets/Keshiya/Jobs/Editor/Generated/DEV_PIPELINE_001",
+  "baseReward": 100,
+  "difficulty": 1,
+  "precision": true,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 120,
+  "visibility": "development",
+  "sourceType": "vector-document",
+  "sourceVersion": 1,
+  "canvasWidth": 2480,
+  "canvasHeight": 3508,
+  "runtimeWidth": 1240,
+  "runtimeHeight": 1754,
+  "font": "UDDigiKyokashoN-R.ttc",
+  "maxOverlapRatio": 0.02,
+  "text": [
+    {
+      "role": "protected",
+      "text": "配達メモ",
+      "x": 280,
+      "y": 270,
+      "size": 95
+    },
+    {
+      "role": "protected",
+      "text": "宛先：高架下の店",
+      "x": 280,
+      "y": 580,
+      "size": 64
+    },
+    {
+      "role": "erasable",
+      "text": "10月12日",
+      "x": 280,
+      "y": 790,
+      "size": 64
+    },
+    {
+      "role": "protected",
+      "text": "取扱注意",
+      "x": 280,
+      "y": 990,
+      "size": 60
+    }
+  ],
+  "lines": [
+    {
+      "role": "paper",
+      "points": [
+        240,
+        450,
+        2240,
+        450
+      ],
+      "width": 3
+    }
+  ],
+  "developmentNotes": "Dummy not story canon; no release registration."
+}

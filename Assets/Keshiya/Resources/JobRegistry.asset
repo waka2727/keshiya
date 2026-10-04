@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c63f0a365db7164ab157bb437ddcb84, type: 3}
+  m_Name: JobRegistry
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobRegistry
+  released:
+  - {fileID: 11400000, guid: 22ec345d21382b141a4dff53f0ac9873, type: 2}
+  - {fileID: 11400000, guid: 6ce3f4d93aa2dc24c9ec59d92052d41e, type: 2}
+  - {fileID: 11400000, guid: 45a9146283a77a242b284a6d0965fe6f, type: 2}
+  - {fileID: 11400000, guid: cc46bd86244f89543aa765b869c789c0, type: 2}
+  - {fileID: 11400000, guid: eb0b93ace0becfb4c9cba09364736243, type: 2}
+  - {fileID: 11400000, guid: 51e679b4df87de5468c3024992a746d4, type: 2}
+  - {fileID: 11400000, guid: 7c2cc6bd16056124bb52f35189215850, type: 2}
+  - {fileID: 11400000, guid: d7fe7d5dc578ebf4a896243346866338, type: 2}

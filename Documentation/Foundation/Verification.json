@@ -1,0 +1,78 @@
+{
+  "baselineChecks": 1735,
+  "addedEditorChecks": 109,
+  "addedPythonChecks": 22,
+  "totalChecks": 1866,
+  "failures": 0,
+  "runtimeSuites": [
+    {
+      "suite": "external01",
+      "exit": 0
+    },
+    {
+      "suite": "ux",
+      "exit": 0
+    },
+    {
+      "suite": "external",
+      "exit": 0
+    },
+    {
+      "suite": "smoke",
+      "exit": 0
+    },
+    {
+      "suite": "tool",
+      "exit": 0
+    },
+    {
+      "suite": "role",
+      "exit": 0
+    },
+    {
+      "suite": "economy",
+      "exit": 0
+    },
+    {
+      "suite": "zigzag",
+      "exit": 0
+    },
+    {
+      "suite": "work",
+      "exit": 0
+    },
+    {
+      "suite": "skills",
+      "exit": 0
+    },
+    {
+      "suite": "shop",
+      "exit": 0
+    },
+    {
+      "suite": "balance",
+      "exit": 0
+    },
+    {
+      "suite": "specialist",
+      "exit": 0
+    },
+    {
+      "suite": "world",
+      "exit": 0
+    }
+  ],
+  "developmentSmokeChecks": 26,
+  "developmentSmokeFailures": 0,
+  "developmentSmokeExcludedFromTotal": "duplicate baseline checks",
+  "developmentDiagnosticNote": "Release-only external01 check asserts !Debug.isDebugBuild and is inapplicable in Development; 1 expected configuration mismatch. Production suite passes unchanged.",
+  "normalBuild": "Succeeded",
+  "developmentBuild": "Succeeded",
+  "devJobExcludedFromBothBuilds": true,
+  "originalSourceFilesUnchanged": 688,
+  "externalTestZipUnchanged": true,
+  "externalTestZipSha256": "9094dea45f531186e9e8be242a7dbf78a7ff37afb90c55ffd5e532ac8539a922",
+  "performanceJsonWritten": true,
+  "previewValidation": "All layers, overlays and coverage passed Editor tests. Interactive Editor window, DEV composite, cyan Erase overlay and magenta Protect overlay visually confirmed.",
+  "coldStart": "Normal welcome renders after lazy tutorial initialization fix; Development smoke launched and exited successfully."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "TEST_001",
+  "title": "机に置いてあった紙",
+  "clientId": "CLIENT_TEST_001",
+  "clientName": "子どもの親",
+  "clientLetter": "机の上に置いていた紙です。いつの間にか、町がひとつできていました。全部消して、また使えるようにお願いします。",
+  "workInstruction": "鉛筆の落書きを全部消してください。",
+  "completionMessage": "家も犬も、また描くそうです。きれいな紙に戻してくれてありがとう。",
+  "paperAsset": "Assets/Keshiya/Resources/Paper-ordinary.asset",
+  "writingAsset": "Assets/Keshiya/Resources/Writing-hb.asset",
+  "runtimeAsset": "Assets/Keshiya/Resources/External-TEST_001.asset",
+  "artworkFolder": "Assets/Keshiya/ExternalArt/TEST_001",
+  "baseReward": 800,
+  "difficulty": 1,
+  "precision": false,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 240,
+  "visibility": "existing",
+  "sourceType": "legacy-external-art",
+  "sourceVersion": 1,
+  "maxOverlapRatio": 1.0,
+  "developmentNotes": "Frozen External Test artwork; overlaps retained, no regeneration by v2 importer."
+}

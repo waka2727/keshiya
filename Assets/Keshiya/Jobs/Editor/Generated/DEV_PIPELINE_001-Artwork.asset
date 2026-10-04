@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c99bd3d9cf65040bee540bd92a4b18, type: 3}
+  m_Name: DEV_PIPELINE_001-Artwork
+  m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobArtworkData
+  paper: {fileID: 2800000, guid: 0e9e8d4623aa8fe4298f7d9b1204102f, type: 3}
+  protectedImage: {fileID: 2800000, guid: f5793e035aa80304194e782007bb9804, type: 3}
+  erasable: {fileID: 2800000, guid: ce5ba7b29fb480a4f9d23fc48505fa3c, type: 3}
+  eraseMask: {fileID: 2800000, guid: ce42b4d5e7fa4b247bfe7e24e27d4e42, type: 3}
+  protectMask: {fileID: 2800000, guid: 68ed374e685eb004fbcde6930ea8bb05, type: 3}
+  completePreview: {fileID: 2800000, guid: 3c1a615803655614ea470d03970980cb, type: 3}
+  initialPreview: {fileID: 2800000, guid: 49e9a76880bbaed41aa14c9c66554505, type: 3}
+  worldSize: {x: 5, y: 7.072581}
+  sourceFolder: Tools/JobPipeline/Source/DEV_PIPELINE_001.json
+  manifestHash: 
+  testStrokes: []

@@ -6,7 +6,7 @@ namespace Keshiya {
  [Serializable] public sealed class CraftStatistics {public float erasedArea,longestCm;public int precisionSuccesses,pristineJobs,longCollections;}
  [Serializable] public sealed class ExperienceReason {public CraftBranch branch;public string reason;public float amount;}
  // All persistent progression state and reward deduplication lives here, not in UI.
- [Serializable] public sealed class PlayerProgress {
+ [Serializable] public sealed partial class PlayerProgress {
   public Wallet wallet=new Wallet();
   public ToolInventory tools=new ToolInventory();
   public WorkSession work=new WorkSession();

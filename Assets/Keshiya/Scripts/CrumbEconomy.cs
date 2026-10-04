@@ -1,9 +1,10 @@
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 namespace Keshiya
 {
     // Authoritative material ledger; never dependent on recycled visual particles.
-    public sealed class CrumbEconomy
+    public sealed partial class CrumbEconomy
     {
         public readonly CrumbEconomyConfig Config;
         public PlayerProgress Progress;

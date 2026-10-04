@@ -1,0 +1,23 @@
+{
+  "id": "TEST_003",
+  "title": "締切は昨日でした",
+  "clientId": "CLIENT_TEST_003",
+  "clientName": "徹夜明けの漫画家",
+  "clientLetter": "下書きけしをおnがいします。\n\n黒いペンのせnは完成線です。\n薄い鉛筆線だけ消してくだしあ。\n\n締切につては聞かないでｋださい。\n\n……昨日でしあt。",
+  "workInstruction": "青灰色の鉛筆下書きだけ消します。黒い完成線とコマ枠を残してください。",
+  "completionMessage": "たすかりました。\n\n下書きって、\n消えてしまえば誰にも見えないんですよね。\n\n……まあ、\n描いた本人は全部おぼえてますけｄ。\n\nこれで原稿おくれまｓ\nほんとに助かりｍした。\n\nじゃあ次のげんこ――\n\n……いや寝ます。\n\nおやすみなさう。",
+  "paperAsset": "Assets/Keshiya/Resources/Paper-fine.asset",
+  "writingAsset": "Assets/Keshiya/Resources/Writing-2b.asset",
+  "runtimeAsset": "Assets/Keshiya/Resources/External-TEST_003.asset",
+  "artworkFolder": "Assets/Keshiya/ExternalArt/TEST_003",
+  "baseReward": 2600,
+  "difficulty": 5,
+  "precision": true,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 420,
+  "visibility": "existing",
+  "sourceType": "legacy-external-art",
+  "sourceVersion": 1,
+  "maxOverlapRatio": 1.0,
+  "developmentNotes": "Frozen External Test artwork; overlaps retained, no regeneration by v2 importer."
+}

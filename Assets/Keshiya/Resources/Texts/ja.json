@@ -1,0 +1,877 @@
+{
+    "language": "ja",
+    "entries": [
+        {
+            "id": "ITEM_BudgetSoftEraser_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_BudgetSoftEraser_category",
+            "value": "実用品"
+        },
+        {
+            "id": "ITEM_BudgetSoftEraser_description",
+            "value": "とにかく安い。すぐ減る。なぜか消しカスだけは妙に綺麗につながる。"
+        },
+        {
+            "id": "ITEM_BudgetSoftEraser_displayName",
+            "value": "格安やわらか消し"
+        },
+        {
+            "id": "ITEM_BudgetSoftEraser_iconMotif",
+            "value": ""
+        },
+        {
+            "id": "ITEM_BudgetSoftEraser_id",
+            "value": "budget-soft"
+        },
+        {
+            "id": "ITEM_BudgetSoftEraser_role",
+            "value": "長尺カス / 弱くて減りやすい"
+        },
+        {
+            "id": "ITEM_BudgetSoftEraser_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_BudgetSoftEraser_shortName",
+            "value": "格安やわらか"
+        },
+        {
+            "id": "ITEM_DraftingEraser_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_DraftingEraser_category",
+            "value": "実用品"
+        },
+        {
+            "id": "ITEM_DraftingEraser_description",
+            "value": "狭いところへ届く細身の一本。尖った角は便利ですが、広い紙では手数がかかります。"
+        },
+        {
+            "id": "ITEM_DraftingEraser_displayName",
+            "value": "細型製図消し"
+        },
+        {
+            "id": "ITEM_DraftingEraser_iconMotif",
+            "value": ""
+        },
+        {
+            "id": "ITEM_DraftingEraser_id",
+            "value": "drafting"
+        },
+        {
+            "id": "ITEM_DraftingEraser_role",
+            "value": "細部修正 / 広範囲は苦手"
+        },
+        {
+            "id": "ITEM_DraftingEraser_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_DraftingEraser_shortName",
+            "value": "細型"
+        },
+        {
+            "id": "ITEM_LargeEraser_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_LargeEraser_category",
+            "value": "実用品"
+        },
+        {
+            "id": "ITEM_LargeEraser_description",
+            "value": "大きな下書きに、どんと一面。隣の文字には近づきすぎないこと。減る量も大きめです。"
+        },
+        {
+            "id": "ITEM_LargeEraser_displayName",
+            "value": "大型消しゴム"
+        },
+        {
+            "id": "ITEM_LargeEraser_iconMotif",
+            "value": ""
+        },
+        {
+            "id": "ITEM_LargeEraser_id",
+            "value": "large"
+        },
+        {
+            "id": "ITEM_LargeEraser_role",
+            "value": "広い面 / 細部は苦手"
+        },
+        {
+            "id": "ITEM_LargeEraser_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_LargeEraser_shortName",
+            "value": "大型"
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_category",
+            "value": "実用品"
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_description",
+            "value": "迷った日の一本。広さと安全性の釣り合いがよい、仕事の基準です。"
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_displayName",
+            "value": "普通のプラスチック消しゴム"
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_iconMotif",
+            "value": ""
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_id",
+            "value": "ordinary"
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_role",
+            "value": "万能・いつもの作業"
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_OrdinaryEraser_shortName",
+            "value": "普通"
+        },
+        {
+            "id": "ITEM_PremiumEraser_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_PremiumEraser_category",
+            "value": "実用品"
+        },
+        {
+            "id": "ITEM_PremiumEraser_description",
+            "value": "角を長く保ち、紙をいたわる製図用。面は控えめ。消しカス収入と買い替え費用には不向き。"
+        },
+        {
+            "id": "ITEM_PremiumEraser_displayName",
+            "value": "高級製図消し"
+        },
+        {
+            "id": "ITEM_PremiumEraser_iconMotif",
+            "value": ""
+        },
+        {
+            "id": "ITEM_PremiumEraser_id",
+            "value": "premium"
+        },
+        {
+            "id": "ITEM_PremiumEraser_role",
+            "value": "長持ちする角 / カス少なめ"
+        },
+        {
+            "id": "ITEM_PremiumEraser_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_PremiumEraser_shortName",
+            "value": "高級製図"
+        },
+        {
+            "id": "ITEM_SandEraser_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_SandEraser_category",
+            "value": "実用品"
+        },
+        {
+            "id": "ITEM_SandEraser_description",
+            "value": "速く消える、紙も削れる。手早く済ませたい時ほど、手加減を。"
+        },
+        {
+            "id": "ITEM_SandEraser_displayName",
+            "value": "砂消しゴム"
+        },
+        {
+            "id": "ITEM_SandEraser_iconMotif",
+            "value": ""
+        },
+        {
+            "id": "ITEM_SandEraser_id",
+            "value": "sand"
+        },
+        {
+            "id": "ITEM_SandEraser_role",
+            "value": "速く消せる・紙削れに注意"
+        },
+        {
+            "id": "ITEM_SandEraser_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_SandEraser_shortName",
+            "value": "砂消し"
+        },
+        {
+            "id": "ITEM_SoftEraser_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_SoftEraser_category",
+            "value": "実用品"
+        },
+        {
+            "id": "ITEM_SoftEraser_description",
+            "value": "薄い紙にも、長い消しカスにも。よくまとまりますが、消去には少し手数が必要です。"
+        },
+        {
+            "id": "ITEM_SoftEraser_displayName",
+            "value": "やわらかい消しゴム"
+        },
+        {
+            "id": "ITEM_SoftEraser_iconMotif",
+            "value": ""
+        },
+        {
+            "id": "ITEM_SoftEraser_id",
+            "value": "soft"
+        },
+        {
+            "id": "ITEM_SoftEraser_role",
+            "value": "薄い便箋・文字のそばに"
+        },
+        {
+            "id": "ITEM_SoftEraser_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_SoftEraser_shortName",
+            "value": "やわらか"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_category",
+            "value": "パン"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_description",
+            "value": "長い辺を、ゆっくりひと引き。細そうに見えて、角は大ざっぱ。"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_displayName",
+            "value": "フランスパン消し"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_iconMotif",
+            "value": "baguette"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_id",
+            "value": "baguette"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_role",
+            "value": "趣味の道具 / パンシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_series",
+            "value": "パンシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-baguette_shortName",
+            "value": "フランスパン"
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_category",
+            "value": "特殊"
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_description",
+            "value": "こちらはパン型ゴムとは別の道具。使うほど焦げ色になり、少し硬く強くなる。"
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_displayName",
+            "value": "パン消し"
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_iconMotif",
+            "value": "bread-special"
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_id",
+            "value": "bread-special"
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_role",
+            "value": "軟質→硬化 / 使うほど少し強く"
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_WorldTool-bread-special_shortName",
+            "value": "パン"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_category",
+            "value": "野菜"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_description",
+            "value": "畑から机へ。細身だが、製図道具ほど正確ではない。"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_displayName",
+            "value": "にんじん消し"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_iconMotif",
+            "value": "carrot"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_id",
+            "value": "carrot"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_role",
+            "value": "趣味の道具 / 野菜シリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_series",
+            "value": "野菜シリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-carrot_shortName",
+            "value": "にんじん"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_category",
+            "value": "動物"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_description",
+            "value": "仕事中も机に一匹。速さより、この顔で選ぶ人へ。"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_displayName",
+            "value": "ねこ消し"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_iconMotif",
+            "value": "cat"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_id",
+            "value": "cat"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_role",
+            "value": "趣味の道具 / どうぶつシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_series",
+            "value": "どうぶつシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-cat_shortName",
+            "value": "ねこ"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_category",
+            "value": "パン"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_description",
+            "value": "見た目はいい。持ちにくい。それでも買う人はいる。"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_displayName",
+            "value": "クロワッサン消し"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_iconMotif",
+            "value": "croissant"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_id",
+            "value": "croissant"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_role",
+            "value": "趣味の道具 / パンシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_series",
+            "value": "パンシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-croissant_shortName",
+            "value": "クロワッサン"
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_category",
+            "value": "特殊"
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_description",
+            "value": "黒鉛を吸着する柔らかい塊。紙には優しい。黒ずむほど吸着は少し落ち、通常のカスは出ない。"
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_displayName",
+            "value": "練り消し"
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_iconMotif",
+            "value": "kneaded"
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_id",
+            "value": "kneaded"
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_role",
+            "value": "吸着 / 紙に優しい・通常カスなし"
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_WorldTool-kneaded_shortName",
+            "value": "練り"
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_category",
+            "value": "支給"
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_description",
+            "value": "学生から預かった一本の最後のかけら。依頼の鉛筆跡を消した量に応じて使い切る。"
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_displayName",
+            "value": "名前入りの小さな消しゴム"
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_iconMotif",
+            "value": "named-supply"
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_id",
+            "value": "named-supply"
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_role",
+            "value": "この依頼だけの預かり品"
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_series",
+            "value": ""
+        },
+        {
+            "id": "ITEM_WorldTool-named-supply_shortName",
+            "value": "名前入りの小さな"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_category",
+            "value": "動物"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_description",
+            "value": "耳に期待しすぎないでください。小さい範囲を少しずつ。"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_displayName",
+            "value": "うさぎ消し"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_iconMotif",
+            "value": "rabbit"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_id",
+            "value": "rabbit"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_role",
+            "value": "趣味の道具 / どうぶつシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_series",
+            "value": "どうぶつシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-rabbit_shortName",
+            "value": "うさぎ"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_category",
+            "value": "野菜"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_description",
+            "value": "白い部分を使ってください。広い仕事をのんびりと。"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_displayName",
+            "value": "だいこん消し"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_iconMotif",
+            "value": "radish"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_id",
+            "value": "radish"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_role",
+            "value": "趣味の道具 / 野菜シリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_series",
+            "value": "野菜シリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-radish_shortName",
+            "value": "だいこん"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_brand",
+            "value": "消し屋道具店"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_category",
+            "value": "パン"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_description",
+            "value": "耳まで使える食パン型。広い面はやさしいが、細かい所は苦手。これはゴム製です。"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_displayName",
+            "value": "食パン消し"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_iconMotif",
+            "value": "toast-collect"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_id",
+            "value": "toast-collect"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_role",
+            "value": "趣味の道具 / パンシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_series",
+            "value": "パンシリーズ"
+        },
+        {
+            "id": "ITEM_WorldTool-toast-collect_shortName",
+            "value": "食パン"
+        },
+        {
+            "id": "JOB_DEV_PIPELINE_001_CLIENT_LETTER",
+            "value": "日付だけを消してください。宛名は残してください。"
+        },
+        {
+            "id": "JOB_DEV_PIPELINE_001_COMPLETION",
+            "value": "生成と判定の確認ができました。"
+        },
+        {
+            "id": "JOB_DEV_PIPELINE_001_INSTRUCTION",
+            "value": "青灰色の日付を消し、濃い宛名を残す。"
+        },
+        {
+            "id": "JOB_DEV_PIPELINE_001_TITLE",
+            "value": "配達メモの訂正（開発検証専用）"
+        },
+        {
+            "id": "JOB_TEST_001_CLIENT_LETTER",
+            "value": "机の上に置いていた紙です。いつの間にか、町がひとつできていました。全部消して、また使えるようにお願いします。"
+        },
+        {
+            "id": "JOB_TEST_001_COMPLETION",
+            "value": "家も犬も、また描くそうです。きれいな紙に戻してくれてありがとう。"
+        },
+        {
+            "id": "JOB_TEST_001_INSTRUCTION",
+            "value": "鉛筆の落書きを全部消してください。"
+        },
+        {
+            "id": "JOB_TEST_001_TITLE",
+            "value": "机に置いてあった紙"
+        },
+        {
+            "id": "JOB_TEST_002_CLIENT_LETTER",
+            "value": "書き終えてから、一文字多いことに気づきました。そこだけお願いできますか。ほかの言葉は、このまま届けたいんです。"
+        },
+        {
+            "id": "JOB_TEST_002_COMPLETION",
+            "value": "これで封をできます。小さなところまで、ありがとうございました。"
+        },
+        {
+            "id": "JOB_TEST_002_INSTRUCTION",
+            "value": "「していまます」の余計な二つ目の「ま」だけ消してください。前後の文章は残します。"
+        },
+        {
+            "id": "JOB_TEST_002_TITLE",
+            "value": "一文字だけ、お願いします"
+        },
+        {
+            "id": "JOB_TEST_003_CLIENT_LETTER",
+            "value": "下書きけしをおnがいします。\n\n黒いペンのせnは完成線です。\n薄い鉛筆線だけ消してくだしあ。\n\n締切につては聞かないでｋださい。\n\n……昨日でしあt。"
+        },
+        {
+            "id": "JOB_TEST_003_COMPLETION",
+            "value": "たすかりました。\n\n下書きって、\n消えてしまえば誰にも見えないんですよね。\n\n……まあ、\n描いた本人は全部おぼえてますけｄ。\n\nこれで原稿おくれまｓ\nほんとに助かりｍした。\n\nじゃあ次のげんこ――\n\n……いや寝ます。\n\nおやすみなさう。"
+        },
+        {
+            "id": "JOB_TEST_003_INSTRUCTION",
+            "value": "青灰色の鉛筆下書きだけ消します。黒い完成線とコマ枠を残してください。"
+        },
+        {
+            "id": "JOB_TEST_003_TITLE",
+            "value": "締切は昨日でした"
+        },
+        {
+            "id": "JOB_TEST_004_CLIENT_LETTER",
+            "value": "母の料理ノートが出てきました。星と変な顔は、昔の私が描いたものです。レシピの文字は残してもらえますか。"
+        },
+        {
+            "id": "JOB_TEST_004_COMPLETION",
+            "value": "この字を見ると、台所のことを思い出します。今夜はこの通りに作ってみます。"
+        },
+        {
+            "id": "JOB_TEST_004_INSTRUCTION",
+            "value": "薄い青灰色の落書きだけ消します。レシピ本文と古い紙を大切に。"
+        },
+        {
+            "id": "JOB_TEST_004_TITLE",
+            "value": "母のレシピ"
+        },
+        {
+            "id": "JOB_TEST_005_CLIENT_LETTER",
+            "value": "この消しゴムを、仕事で使い切ってほしいんです。名前は見なくて大丈夫です。ちゃんと紙を消して使ってくださいね。"
+        },
+        {
+            "id": "JOB_TEST_005_COMPLETION",
+            "value": "使ってくれてありがとう。これであの子と両想いに……フフッ。あ、今のは内緒です。"
+        },
+        {
+            "id": "JOB_TEST_005_INSTRUCTION",
+            "value": "支給された名前入り消しゴムで鉛筆跡を消し、残量を使い切ってください。"
+        },
+        {
+            "id": "JOB_TEST_005_TITLE",
+            "value": "誰にも見せない名前"
+        },
+        {
+            "id": "JOB_TEST_006_CLIENT_LETTER",
+            "value": "点数のところだけ、お願いします。百の「1」と、隣の最初の「0」だけです。答えは消さないでください。"
+        },
+        {
+            "id": "JOB_TEST_006_COMPLETION",
+            "value": "これでいいんです。理由は……また今度。細かいところまで助かりました。"
+        },
+        {
+            "id": "JOB_TEST_006_INSTRUCTION",
+            "value": "右上の「100点」から「10」だけ消し、「0点」を残してください。答案本文と赤い採点は保護対象です。"
+        },
+        {
+            "id": "JOB_TEST_006_TITLE",
+            "value": "100点じゃ困るんです"
+        },
+        {
+            "id": "JOB_TEST_007_CLIENT_LETTER",
+            "value": "この手紙は、渡さないことにしました。本文を全部消してください。紙だけは、また使おうと思います。"
+        },
+        {
+            "id": "JOB_TEST_007_COMPLETION",
+            "value": "ありがとうございます。今度は、別のことを書いてみます。"
+        },
+        {
+            "id": "JOB_TEST_007_INSTRUCTION",
+            "value": "手紙の本文をすべて消してください。残す文字はありません。"
+        },
+        {
+            "id": "JOB_TEST_007_TITLE",
+            "value": "渡さなかった手紙"
+        },
+        {
+            "id": "JOB_TEST_008_CLIENT_LETTER",
+            "value": "ずいぶん描き直したんですが、構図を変えることにしました。全部消して構いません。同じ紙で、もう一回やってみます。"
+        },
+        {
+            "id": "JOB_TEST_008_COMPLETION",
+            "value": "おお、ここまで戻るんですね。次の構図、もう決めてきました。"
+        },
+        {
+            "id": "JOB_TEST_008_INSTRUCTION",
+            "value": "濃い4Bの没ラフを全面消去します。残す線はありません。"
+        },
+        {
+            "id": "JOB_TEST_008_TITLE",
+            "value": "全部消して構いません"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[0].description",
+            "value": "少ない往復で消せるようになる。砂消しの速さには届かない。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[0].title",
+            "value": "消去効率"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[1].description",
+            "value": "見えている接触面も一緒に少し広がる。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[1].title",
+            "value": "消去範囲"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[10].description",
+            "value": "回収した細かなカスを少し効率よく玉にする。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[10].title",
+            "value": "玉効率"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[2].description",
+            "value": "使うたびの消しゴムの減りを抑える。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[2].title",
+            "value": "摩耗軽減"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[3].description",
+            "value": "紙の傷みを抑える。砂消しには軽減が控えめに効く。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[3].title",
+            "value": "紙保護"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[4].description",
+            "value": "接触面の端でかすった時を救済。中央で繰り返し擦れば傷む。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[4].title",
+            "value": "保護対象ダメージ軽減"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[5].description",
+            "value": "角が丸くなる速度を抑える。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[5].title",
+            "value": "角耐久"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[6].description",
+            "value": "Fで残る鉛筆を一時表示。高Lvほど早い段階から長く感知。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[6].title",
+            "value": "消し残し感知"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[7].description",
+            "value": "往復しながら進む時の長いカスの成長を助ける。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[7].title",
+            "value": "長尺成長"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[8].description",
+            "value": "幅・周期・進行方向のブレへの許容を少し増す。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[8].title",
+            "value": "切断耐性"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[9].description",
+            "value": "実際に消した量から生まれる材料を増やす。"
+        },
+        {
+            "id": "SKILL_SkillCatalog_skills.Array.data[9].title",
+            "value": "消しカス生成量"
+        },
+        {
+            "id": "TUTORIAL_BASIC_01",
+            "value": "マウスで移動。左ボタンを押しながら動かすと、紙を擦れます。触れたまま何度か往復してみましょう。"
+        },
+        {
+            "id": "TUTORIAL_BASIC_02",
+            "value": "速すぎる擦り方や同じ場所への集中は紙を傷めます。制限時間はありません。急がなくて大丈夫です。"
+        },
+        {
+            "id": "TUTORIAL_BASIC_03",
+            "value": "Q / E または左のボタンで面・辺・角を切り替え。面は広く、辺は線に沿って、角は小さな場所を狙えます。"
+        },
+        {
+            "id": "TUTORIAL_BASIC_04",
+            "value": "Rで向きを45度回転できます。Shift＋Rで逆回転。薄い輪郭が、実際に当たる範囲です。"
+        },
+        {
+            "id": "TUTORIAL_BASIC_05",
+            "value": "Wheelで上下移動、Ctrl＋Wheelで拡大・縮小。中ボタンドラッグで自由に移動、Homeで全体へ戻れます。"
+        },
+        {
+            "id": "TUTORIAL_BASIC_06",
+            "value": "Spaceで消しカスを吹く、Cで回収。Gで細かいカスを玉に、Vで買取へ。売るかどうかは自由です。"
+        },
+        {
+            "id": "TUTORIAL_BASIC_07",
+            "value": "消去率95%以上で左の「依頼完了」を押せます。「やり直す」は確認後、この仕事の開始時へ戻ります。"
+        }
+    ]
+}

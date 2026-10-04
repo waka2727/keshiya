@@ -3,7 +3,7 @@ namespace Keshiya {
  public enum WorkPhase { Board, Detail, Work, Result }
  [System.Serializable] public sealed class JobRecord { public System.Collections.Generic.List<ToolUsage> lastUsage=new System.Collections.Generic.List<ToolUsage>();public int completions;public string bestGrade="C";public int bestReward;public float fastest=float.MaxValue; }
  // Session-only progression. A future shop can consume Wallet without changing Job or Paper.
- public sealed class WorkSession {
+ public sealed partial class WorkSession {
   public WorkPhase Phase {get;private set;}=WorkPhase.Board;
   public int Selected {get;private set;}
   public int CompletedCount {get;private set;}

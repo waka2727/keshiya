@@ -12,6 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b930816c463224382bd9c95aab7739, type: 3}
   m_Name: External-TEST_002
   m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobDefinition
+  content:
+    clientId: CLIENT_TEST_002
+    appearancePhase: unassigned
+    developmentNotes: Frozen External Test artwork; overlaps retained, no regeneration
+      by v2 importer.
+    recurringClient: 0
+    developmentOnly: 0
+    recommendedTags: []
+    specialRules: []
+    storyFlags: []
+    unlockConditions: []
+    followUpJobIds: []
+    precisionDifficulty: 0
+    paperRisk: 0
+    eraseVolume: 0
+    protectDensity: 0
+    maxOverlapRatio: 1
+    expSettings: existing-default
+    titleTextId: JOB_TEST_002_TITLE
+    letterTextId: JOB_TEST_002_CLIENT_LETTER
+    instructionTextId: JOB_TEST_002_INSTRUCTION
+    completionTextId: JOB_TEST_002_COMPLETION
   id: TEST_002
   client: "\u7F8E\u54B2"
   summary: "\u300C\u3057\u3066\u3044\u307E\u307E\u3059\u300D\u306E\u4F59\u8A08\u306A\u4E8C\u3064\u76EE\u306E\u300C\u307E\u300D\u3060\u3051\u6D88\u3057\u3066\u304F\u3060\u3055\u3044\u3002\u524D\u5F8C\u306E\u6587\u7AE0\u306F\u6B8B\u3057\u307E\u3059\u3002"

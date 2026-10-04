@@ -24,3 +24,8 @@ Thumbs.db
 *.zip
 .env
 .env.*
+
+# Python caches and local test logs
+__pycache__/
+*.py[cod]
+*.log

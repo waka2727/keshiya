@@ -1,0 +1,23 @@
+{
+  "id": "TEST_005",
+  "title": "誰にも見せない名前",
+  "clientId": "CLIENT_TEST_005",
+  "clientName": "放課後の学生",
+  "clientLetter": "この消しゴムを、仕事で使い切ってほしいんです。名前は見なくて大丈夫です。ちゃんと紙を消して使ってくださいね。",
+  "workInstruction": "支給された名前入り消しゴムで鉛筆跡を消し、残量を使い切ってください。",
+  "completionMessage": "使ってくれてありがとう。これであの子と両想いに……フフッ。あ、今のは内緒です。",
+  "paperAsset": "Assets/Keshiya/Resources/Paper-ordinary.asset",
+  "writingAsset": "Assets/Keshiya/Resources/Writing-2b.asset",
+  "runtimeAsset": "Assets/Keshiya/Resources/External-TEST_005.asset",
+  "artworkFolder": "Assets/Keshiya/ExternalArt/TEST_005",
+  "baseReward": 1900,
+  "difficulty": 2,
+  "precision": false,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 240,
+  "visibility": "existing",
+  "sourceType": "legacy-external-art",
+  "sourceVersion": 1,
+  "maxOverlapRatio": 1.0,
+  "developmentNotes": "Frozen External Test artwork; overlaps retained, no regeneration by v2 importer."
+}

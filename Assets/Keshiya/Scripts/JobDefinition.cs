@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 namespace Keshiya
 {
     [CreateAssetMenu(menuName="Keshiya/Job Definition")]
     public sealed class JobDefinition : ScriptableObject
     {
+        public JobContentMetadata content=new JobContentMetadata();
         public string id, client="ご近所の方", summary, clientQuote, feature, recommended="普通消し", unlockRank;
         [Range(1,5)] public int difficulty=1;
         public int baseReward=1000;

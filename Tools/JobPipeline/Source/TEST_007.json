@@ -1,0 +1,23 @@
+{
+  "id": "TEST_007",
+  "title": "渡さなかった手紙",
+  "clientId": "CLIENT_TEST_007",
+  "clientName": "手紙を持ってきた人",
+  "clientLetter": "この手紙は、渡さないことにしました。本文を全部消してください。紙だけは、また使おうと思います。",
+  "workInstruction": "手紙の本文をすべて消してください。残す文字はありません。",
+  "completionMessage": "ありがとうございます。今度は、別のことを書いてみます。",
+  "paperAsset": "Assets/Keshiya/Resources/Paper-fine.asset",
+  "writingAsset": "Assets/Keshiya/Resources/Writing-hb.asset",
+  "runtimeAsset": "Assets/Keshiya/Resources/External-TEST_007.asset",
+  "artworkFolder": "Assets/Keshiya/ExternalArt/TEST_007",
+  "baseReward": 1400,
+  "difficulty": 1,
+  "precision": false,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 240,
+  "visibility": "existing",
+  "sourceType": "legacy-external-art",
+  "sourceVersion": 1,
+  "maxOverlapRatio": 1.0,
+  "developmentNotes": "Frozen External Test artwork; overlaps retained, no regeneration by v2 importer."
+}

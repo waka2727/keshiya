@@ -1,0 +1,23 @@
+{
+  "id": "TEST_004",
+  "title": "母のレシピ",
+  "clientId": "CLIENT_TEST_004",
+  "clientName": "実家を片づけている人",
+  "clientLetter": "母の料理ノートが出てきました。星と変な顔は、昔の私が描いたものです。レシピの文字は残してもらえますか。",
+  "workInstruction": "薄い青灰色の落書きだけ消します。レシピ本文と古い紙を大切に。",
+  "completionMessage": "この字を見ると、台所のことを思い出します。今夜はこの通りに作ってみます。",
+  "paperAsset": "Assets/Keshiya/Resources/Paper-old.asset",
+  "writingAsset": "Assets/Keshiya/Resources/Writing-hb.asset",
+  "runtimeAsset": "Assets/Keshiya/Resources/External-TEST_004.asset",
+  "artworkFolder": "Assets/Keshiya/ExternalArt/TEST_004",
+  "baseReward": 2400,
+  "difficulty": 5,
+  "precision": true,
+  "requiredErasure": 0.95,
+  "referenceSeconds": 420,
+  "visibility": "existing",
+  "sourceType": "legacy-external-art",
+  "sourceVersion": 1,
+  "maxOverlapRatio": 1.0,
+  "developmentNotes": "Frozen External Test artwork; overlaps retained, no regeneration by v2 importer."
+}

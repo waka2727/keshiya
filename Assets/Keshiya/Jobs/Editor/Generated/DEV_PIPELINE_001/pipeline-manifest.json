@@ -1,0 +1,24 @@
+{
+  "jobId": "DEV_PIPELINE_001",
+  "sourceVersion": 1,
+  "generatorVersion": "2.0",
+  "canvasWidth": 2480,
+  "canvasHeight": 3508,
+  "runtimeWidth": 1240,
+  "runtimeHeight": 1754,
+  "sourceType": "vector-document",
+  "coordinateOrigin": "top-left",
+  "uv": "full-canvas",
+  "font": "UDDigiKyokashoN-R.ttc",
+  "fontSha256": "563e3e2a3baa7c2681604f6a654d5f7353ef654c3cd4cce17caaddaa884f5f84",
+  "sourceSha256": "346aee46944fbcabfa3e67a93f4216556a9d9c6aca5e5e5736b1683d4f764546",
+  "layers": {
+    "Protected": "4e2ed7b7aa854f63ab0dfe3249acb7cbacc4f0a915f85c842750977c7c7241a6",
+    "Erasable": "e7fe8c41b2de2da4f3dda6ae7baf4d5753850298de2ddf85a0b4f716c78c077a",
+    "Paper": "0c79b340d431ec928cd9dd7c5ce54bdc9305d2da124c42b40af9ec003e6aa223",
+    "EraseMask": "8472534a093029cb90942177a3e21e3638f7ac0bcef328a23cefce76febeeea2",
+    "ProtectMask": "35f073a7c5496d646098c36f1eb86d81c51a44b76b73eb462f8e2e83607ab9c0",
+    "CompletePreview": "2fbe86e517139b9ffc3ebab2d37144f67977e691dbc2c565553ddd63fa3448cd",
+    "InitialPreview": "9969445924946c5625a8d5c88cf062c654c4384c97acf17055337d4bebd61a79"
+  }
+}
