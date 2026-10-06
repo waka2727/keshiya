@@ -6,7 +6,10 @@ namespace Keshiya
     public sealed class FeedbackAudio : MonoBehaviour
     {
         AudioSource friction, accents;
-        AudioClip contactClip, damageClip, blowClip;
+        AudioClip contactClip, damageClip, blowClip, completionClip;
+        bool completedCue; public int CompletionEvents {get;private set;}
+        public bool TryCompletion(float erased) {if(completedCue||erased<1f)return false;completedCue=true;CompletionEvents++;if(!Muted&&accents!=null)accents.PlayOneShot(completionClip,config.masterVolume*.32f);return true;}
+        public void ResetCompletion(){completedCue=false;}
         FeelConfig config;
         readonly List<AudioClip> owned = new List<AudioClip>();
         float damageCooldown;
@@ -27,6 +30,7 @@ namespace Keshiya
             friction.clip=UseOrMake(feel.frictionClip,"Soft eraser friction",.6f,0);
             contactClip=UseOrMake(feel.contactClip,"Paper contact",.065f,1);
             damageClip=UseOrMake(feel.damageClip,"Paper fibres",.09f,2);
+            completionClip=UseOrMake(null,"Complete paper",.32f,4);
             blowClip=UseOrMake(feel.blowClip,"Gentle puff",.28f,3);
         }
 
@@ -47,6 +51,7 @@ namespace Keshiya
                     : Mathf.Sin(Mathf.PI*u)*Mathf.Exp(-u*(kind==3?1:3));
                 // Fade loop endpoints to prevent seam clicks.
                 if(kind==0) envelope*=Mathf.Min(1,Mathf.Min(u,1-u)*120);
+                if(kind==4){signal=.4f*Mathf.Sin(t*2*Mathf.PI*660)+.2f*Mathf.Sin(t*2*Mathf.PI*990);envelope=Mathf.Sin(Mathf.PI*u)*Mathf.Exp(-u*4);}
                 samples[i]=signal*envelope*.65f;
             }
             var clip=AudioClip.Create(name,samples.Length,1,rate,false);

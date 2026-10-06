@@ -29,7 +29,7 @@ namespace Keshiya {
    Fill(752,150,494,510,panel);Text(776,172,446,35,"作業情報",title);
    Text(776,222,444,57,$"紙：{j.PaperName}\n筆記具：{j.WritingName}",body);
    Text(776,288,444,110,j.instruction,body);
-   Text(776,401,444,102,$"特徴：{j.category} / 保護対象：{(j.precision?"あり":"なし")}{(ShowToolRecommendations?"\n候補："+j.recommended:"")}\n完了：{j.requiredErasure*100:0}%以上 / 目安 {j.referenceSeconds/60:0.#}分",small);
+   Text(776,401,444,102,$"特徴：{j.category} / 保護対象：{(j.precision?"あり":"なし")}{(ShowToolRecommendations?"\n候補："+j.recommended:"")}\n完了：{j.requiredErasure*100:0}%以上",small);
    if(previewIndex!=Game.Session.Selected){preview?.Dispose();preview=j.artwork==null?new Paper(Game.Config,Game.Feel.erasureGrain,j):null;previewIndex=Game.Session.Selected;quoteScroll=Vector2.zero;}
    GUI.DrawTexture(new Rect(776,510,106,136),j.artwork!=null?j.artwork.initialPreview:preview.Texture,ScaleMode.ScaleToFit);
    var record=Game.Session.Record(j.id);Text(899,516,320,128,(j.suppliedTool!=null?"支給品："+j.suppliedTool.displayName:"持込 "+Game.Tools.loadout.selected.Count+"本 / Tで変更")+"\n遅くても基本報酬は同じです。\n"+(record==null?"この仕事は初めてです。":$"履歴 {record.completions}回 / 最高{record.bestGrade}"),small);
@@ -38,7 +38,7 @@ namespace Keshiya {
   public static readonly Rect LetterViewport=new Rect(56,224,652,414);
 
   void Results(){var r=Game.CurrentJob.Result;Header("仕事の結果 / "+Game.Definition.displayName,"依頼人："+Game.Definition.client+"  /  依頼報酬は入金済みです。");Fill(32,153,585,480,panel);Fill(640,153,606,480,panel);
-   Text(56,177,235,61,"評価 "+WorkSession.Grade(r),big);string thanks=r.severe||r.protectedMajor?"大きな損傷が残りました。":string.IsNullOrEmpty(Game.Definition.thankYou)?"おつかれさまでした。":Game.Definition.thankYou;thanksScroll=GUI.BeginScrollView(new Rect(270,174,317,90),thanksScroll,new Rect(0,0,289,Mathf.Max(85,body.CalcHeight(new GUIContent(thanks),285))));Text(0,0,285,900,thanks,body);GUI.EndScrollView();
+   Text(56,177,235,61,"評価 "+WorkSession.Grade(r),big);string thanks=JobReactions.Resolve(Game.Definition,r);thanksScroll=GUI.BeginScrollView(new Rect(270,174,317,90),thanksScroll,new Rect(0,0,289,Mathf.Max(85,body.CalcHeight(new GUIContent(thanks),285))));Text(0,0,285,900,thanks,body);GUI.EndScrollView();
    string[] quality={$"消去率  {r.erased*100:0.0}%",$"紙ダメージ  {r.damage*100:0.00}% / 最大 {r.peak*100:0.0}%",$"保護対象ダメージ  {r.protectedDamage*100:0.0}%",$"作業時間  {PrototypeHUD.TimeText(r.seconds)}"};for(int i=0;i<quality.Length;i++)Text(56,271+i*52,533,42,quality[i]);Text(56,490,531,89,$"今回の経験  消去 +{Game.Progress.jobExp[0]:0.0} / 精密 +{Game.Progress.jobExp[1]:0.0} / カス +{Game.Progress.jobExp[2]:0.0}\n獲得SP  消去 +{Game.Progress.jobSP[0]} / 精密 +{Game.Progress.jobSP[1]} / カス +{Game.Progress.jobSP[2]}\n時間だけで品質評価や基本報酬は下がりません。",small);if(Button(56,588,531,31,"EXP内訳・獲得条件を見る / K"))Game.OpenSkills();
    string[] rows={$"基本報酬|{r.basic:N0} 円（縛り +{r.challenge:N0}）",$"仕上がりボーナス|+{r.finish:N0} 円",$"紙保護ボーナス|+{r.pristine:N0} 円",$"保護対象ボーナス|+{r.protection:N0} 円",$"スピードボーナス|+{r.speed:N0} 円",$"依頼報酬 合計|{r.Total:N0} 円",$"消しカス売却|{Game.Economy.JobSales:N0} 円",$"今回の収入|{r.Total+Game.Economy.JobSales:N0} 円"};for(int i=0;i<rows.Length;i++){var parts=rows[i].Split('|');Text(666,180+i*45,345,34,parts[0]);Text(1022,180+i*45,204,34,parts[1]);}
    Text(666,562,545,52,"未売却の回収品は保管できます。\n今回の売却額には、この仕事中に売った在庫も含みます。",small);

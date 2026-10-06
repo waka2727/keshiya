@@ -46,7 +46,7 @@ namespace Keshiya
             if(Game.BoardEnabled&&Game.Session.Phase!=WorkPhase.Work){Game.WorkHUD.Draw();return;}
             GUI.matrix=Matrix4x4.TRS(Vector3.zero,Quaternion.identity,new Vector3(Screen.width/1280f,Screen.height/800f,1));
             Fill(new Rect(0,0,358,800),new Color(.085f,.13f,.14f));Fill(new Rect(24,24,35,3),accent);
-            Label(24,34,310,42,"消し屋",title);Label(25,78,310,22,"External Test 01 / 開発中",small);
+            Label(24,34,310,42,"消し屋",title);Label(25,78,310,22,"Feedback 0.8.2 / 開発中",small);
             GUI.enabled=pendingJob<0&&!Game.TradeOpen&&!Game.WorkHUD.AskLeave&&!Game.WorkHUD.AskRestart&&!Game.Assist.SampleOpen;
             if(!Game.BoardEnabled&&Button(new Rect(24,108,148,31),"通常依頼",Game.JobIndex==0))AskJob(0);
             if(!Game.BoardEnabled&&Button(new Rect(182,108,150,31),"精密依頼",Game.JobIndex==1))AskJob(1);
@@ -72,7 +72,7 @@ namespace Keshiya
             Label(24,554,310,22,Game.Supplied!=null?$"支給品の消耗 {Game.CurrentJob.SupplyProgress*100:0}%":Game.Eraser.specialKind==SpecialToolKind.None?Game.Eraser.role:Game.ActiveState.special.Text(Game.Eraser),small);
             Label(24,571,310,25,$"作業 {TimeText(Game.CurrentJob.Seconds)}  /  制限時間なし",small);
             GUI.enabled=pendingJob<0&&!Game.TradeOpen&&!Game.WorkHUD.AskLeave&&!Game.WorkHUD.AskRestart&&!Game.Assist.SampleOpen&&Game.CurrentJob.CanComplete(Game.Paper);
-            if(Button(new Rect(24,614,308,44),"依頼完了"))Game.Finish();GUI.enabled=pendingJob<0&&!Game.TradeOpen&&!Game.WorkHUD.AskLeave&&!Game.WorkHUD.AskRestart&&!Game.Assist.SampleOpen;
+            if(Button(new Rect(24,614,308,44),"作業を完了して提出",Game.CurrentJob.CanComplete(Game.Paper)))Game.Finish();GUI.enabled=pendingJob<0&&!Game.TradeOpen&&!Game.WorkHUD.AskLeave&&!Game.WorkHUD.AskRestart&&!Game.Assist.SampleOpen;
             if(Button(new Rect(24,660,308,21),"K：スキル / F：消し残し感知"))Game.OpenSkills();
             Label(24,681,310,24,"マウス：移動 / 左ボタン：押して擦る",small);
             Label(24,706,310,24,"1〜9：種類 / Tab：個体 / T：持込品",small);

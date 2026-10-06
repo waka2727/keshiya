@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b930816c463224382bd9c95aab7739, type: 3}
   m_Name: External-TEST_008
   m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobDefinition
+  reactions:
+  - kind: 1
+    textId: JOB_TEST_008_REACTION_LOW_QUALITY
+  - kind: 2
+    textId: JOB_TEST_008_REACTION_LOW_QUALITY
+  - kind: 3
+    textId: JOB_TEST_008_REACTION_LOW_QUALITY
+  - kind: 4
+    textId: JOB_TEST_008_REACTION_LOW_QUALITY
+  - kind: 5
+    textId: JOB_TEST_008_REACTION_LOW_QUALITY
   content:
     clientId: CLIENT_TEST_008
     appearancePhase: unassigned

@@ -20,6 +20,8 @@ namespace Keshiya
         public Vector2 Bounds => new Vector2(
             Mathf.Abs(cosine)*HalfSize.x + Mathf.Abs(sine)*HalfSize.y,
             Mathf.Abs(sine)*HalfSize.x + Mathf.Abs(cosine)*HalfSize.y);
+        public static Vector2 PixelCenter(int x,int y,int width,int height,Vector2 size)=>new Vector2(((x+.5f)/width-.5f)*size.x,((y+.5f)/height-.5f)*size.y);
+        public float PixelWeight(int x,int y,int width,int height,Vector2 size,Vector2 position)=>Weight(PixelCenter(x,y,width,height,size)-position);
         public float SampleSpacing => Mathf.Min(HalfSize.x, HalfSize.y) * .22f;
         public float Weight(Vector2 relative)
         {

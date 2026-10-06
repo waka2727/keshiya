@@ -83,7 +83,7 @@ def make002():
  return d
 
 def make003():
- d=Doc(3,'締切は昨日でした');im=Image.open(ROOT/'manga-ink-original.png').convert('L').resize((2250,3180),Image.Resampling.LANCZOS);alpha=ImageChops.invert(im);ink=Image.new('RGBA',im.size,(18,21,27));ink.putalpha(alpha);d.keep.alpha_composite(ink,(115,165))
+ d=Doc(3,'締切は昨日でした');im=Image.open(ROOT/'manga-ink-original.png').convert('L').resize((2250,3180),Image.Resampling.LANCZOS);alpha=ImageChops.invert(im).point(lambda x:0 if x<20 else x);ink=Image.new('RGBA',im.size,(18,21,27));ink.putalpha(alpha);d.keep.alpha_composite(ink,(115,165))
  # Draft construction follows the rendered portrait, fingers and street perspectives.
  for box in [(455,1170,1060,1710),(930,380,1380,730),(840,2000,1290,2420),(1890,2460,2210,2890)]:
   d.ellipse(box,True,6,(126,155,175,170));cx=(box[0]+box[2])/2;cy=(box[1]+box[3])/2;d.line([(cx,box[1]-50),(cx+20,box[3]+65)],True,5);d.line([(box[0]-30,cy),(box[2]+50,cy+20)],True,5)
@@ -98,6 +98,17 @@ def make003():
  d.line([(104,195),(2340,195)],True,5,True)
  d.line([(102,195),(102,3325)],True,5,True)
  d.line([(153,1855),(2300,1855)],True,5,True)
+ # Feedback 0.8.2: keep a few facial/finger construction marks, move most
+ # provisional composition work into open paper (old balloon, sky and action arcs).
+ old=d.erase.copy();d.erase=Image.new('RGBA',(W,H))
+ for box in [(1350,1195,1520,1475),(1880,1910,2225,2130),(1480,230,1800,405)]:
+  d.ellipse(box,True,7,(126,155,175,170))
+ for pts in [[(1420,350),(1580,300),(1780,335)],[(1310,2330),(1470,2400),(1530,2610)],[(1410,2250),(1550,2380),(1590,2640)],[(1760,1960),(2020,1900),(2250,2020)],[(350,3300),(900,3350),(1770,3300)]]:
+  d.line(pts,True,7,True)
+ # Downweight the dense old structural marks. Deliberate close-up points remain.
+ olda=np.asarray(old.getchannel('A')).copy();yy,xx=np.indices(olda.shape)
+ detail=((xx>680)&(xx<1020)&(yy>1370)&(yy<1500))|((xx>1780)&(xx<1950)&(yy>1480)&(yy<1630))
+ olda=np.where(detail,olda,olda*.16).astype(np.uint8);old.putalpha(Image.fromarray(olda));d.erase=Image.alpha_composite(old,d.erase)
  # Exclude a 24-pixel zone around ink. The same trimming is applied to visual and official mask.
  safety=d.keep.getchannel('A').point(lambda x:255 if x>95 else 0).filter(ImageFilter.MaxFilter(49));a=ImageChops.multiply(d.erase.getchannel('A'),ImageChops.invert(safety));d.erase.putalpha(a)
  return d

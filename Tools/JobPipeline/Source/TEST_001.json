@@ -5,7 +5,7 @@
   "clientName": "子どもの親",
   "clientLetter": "机の上に置いていた紙です。いつの間にか、町がひとつできていました。全部消して、また使えるようにお願いします。",
   "workInstruction": "鉛筆の落書きを全部消してください。",
-  "completionMessage": "家も犬も、また描くそうです。きれいな紙に戻してくれてありがとう。",
+  "completionMessage": "家も猫も、また描くそうです。きれいな紙に戻してくれてありがとう。",
   "paperAsset": "Assets/Keshiya/Resources/Paper-ordinary.asset",
   "writingAsset": "Assets/Keshiya/Resources/Writing-hb.asset",
   "runtimeAsset": "Assets/Keshiya/Resources/External-TEST_001.asset",
@@ -19,5 +19,27 @@
   "sourceType": "legacy-external-art",
   "sourceVersion": 1,
   "maxOverlapRatio": 1.0,
-  "developmentNotes": "Frozen External Test artwork; overlaps retained, no regeneration by v2 importer."
+  "developmentNotes": "Frozen External Test artwork; overlaps retained, no regeneration by v2 importer.",
+  "reactions": [
+    {
+      "kind": 1,
+      "textId": "JOB_TEST_001_REACTION_LOW_QUALITY"
+    },
+    {
+      "kind": 2,
+      "textId": "JOB_TEST_001_REACTION_LOW_QUALITY"
+    },
+    {
+      "kind": 3,
+      "textId": "JOB_TEST_001_REACTION_LOW_QUALITY"
+    },
+    {
+      "kind": 4,
+      "textId": "JOB_TEST_001_REACTION_LOW_QUALITY"
+    },
+    {
+      "kind": 5,
+      "textId": "JOB_TEST_001_REACTION_LOW_QUALITY"
+    }
+  ]
 }

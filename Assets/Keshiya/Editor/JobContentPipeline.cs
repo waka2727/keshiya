@@ -8,6 +8,7 @@ namespace Keshiya.Editor {
  [Serializable] public sealed class JobSource {
   public string id,title,clientId,clientName,clientLetter,workInstruction,completionMessage,paperAsset,writingAsset,runtimeAsset,artworkFolder,visibility,developmentNotes;
   public int baseReward,difficulty;public float requiredErasure,referenceSeconds,maxOverlapRatio=.1f;public bool precision,includeInExternalTest;
+  public JobReaction[] reactions;
   public JobContentMetadata metadata;
  }
  public static class JobContentPipeline {
@@ -33,6 +34,7 @@ namespace Keshiya.Editor {
      j.id=s.id;j.displayName=s.title;j.client=s.clientName;j.clientQuote=s.clientLetter;j.instruction=s.workInstruction;j.summary=s.workInstruction;j.thankYou=s.completionMessage;j.baseReward=s.baseReward;j.difficulty=s.difficulty;j.requiredErasure=s.requiredErasure;j.referenceSeconds=s.referenceSeconds;j.precision=s.precision;j.paper=AssetDatabase.LoadAssetAtPath<PaperDefinition>(s.paperAsset);j.writing=AssetDatabase.LoadAssetAtPath<WritingInstrumentDefinition>(s.writingAsset);j.artwork=a;
     }
     if(!existing){j.externalTest=s.includeInExternalTest;if(s.metadata!=null)j.content=s.metadata;}
+    if(s.reactions!=null)j.reactions=s.reactions;
     j.content=j.content??new JobContentMetadata();j.content.clientId=s.clientId;j.content.developmentOnly=dev;j.content.developmentNotes=s.developmentNotes;j.content.maxOverlapRatio=s.maxOverlapRatio;
     var fields=new[]{"TITLE","CLIENT_LETTER","INSTRUCTION","COMPLETION"};var values=new[]{j.displayName,j.clientQuote,j.instruction,j.thankYou};var ids=fields.Select(f=>"JOB_"+s.id+"_"+f).ToArray();
     for(int i=0;i<ids.Length;i++)if(!entries.ContainsKey(ids[i]))entries.Add(ids[i],values[i]??"");
@@ -58,6 +60,7 @@ namespace Keshiya.Editor {
    if(j.paper==null||j.writing==null||j.artwork==null){errors.Add(s.id+" broken references");continue;}
    if(j.baseReward<0||j.difficulty<1||j.difficulty>5)errors.Add(s.id+" invalid reward/difficulty");
    foreach(var id in new[]{j.content.titleTextId,j.content.letterTextId,j.content.instructionTextId,j.content.completionTextId})try{if(string.IsNullOrWhiteSpace(TextCatalog.Require(id)))errors.Add(s.id+" empty text "+id);}catch(Exception){errors.Add(s.id+" missing text "+id);}
+   foreach(var reaction in j.reactions??Array.Empty<JobReaction>())try{if(reaction==null||string.IsNullOrWhiteSpace(TextCatalog.Require(reaction.textId)))errors.Add(s.id+" empty reaction");}catch(Exception){errors.Add(s.id+" missing reaction text ID");}
    var requiredTextures=new[]{j.artwork.paper,j.artwork.protectedImage,j.artwork.erasable,j.artwork.eraseMask,j.artwork.protectMask,j.artwork.completePreview,j.artwork.initialPreview};
    bool missingTexture=false;for(int n=0;n<requiredTextures.Length;n++)if(requiredTextures[n]==null){errors.Add(s.id+" missing runtime texture "+Layers[n]);missingTexture=true;}
    if(missingTexture)continue;

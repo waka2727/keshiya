@@ -96,10 +96,14 @@ namespace Keshiya {
   }
   void ResizeCamera(){view.rect=new Rect(.28f,0,.72f,1);float size=Mathf.Max(Paper.Size.y*(Definition.artwork!=null?.78f:.66f),Paper.Size.x*.60f/Mathf.Max(.1f,view.aspect));if(Viewport!=null)Viewport.Apply(size);else view.orthographicSize=size;}
   void Update(){if(SenseUntil>0&&Time.unscaledTime>=SenseUntil){SenseUntil=0;Paper.Reveal(0);}Economy.AdvanceTime(Time.unscaledTime);ResizeCamera();if(Application.isFocused&&!InputBlocked)CurrentJob.Tick(Time.unscaledDeltaTime);if(dirty&&Time.unscaledTime>=refreshAt){Paper.Refresh();dirty=false;refreshAt=Time.unscaledTime+1f/30;} }
+  public ContactFootprint LastStrokeContact {get;private set;}
+  public int LastStrokeFrame {get;private set;}=-1;
   public void Rub(Vector2 a,Vector2 b,float speed){
    if(!HasUsableTool||CurrentJob.Completed||InputBlocked||Vector2.Distance(a,b)<.00001f)return;
    bool tornBefore=Paper.Torn;CurrentJob.StartWork();float distance=Vector2.Distance(a,b);
-   var result=Paper.Stroke(a,b,speed,CurrentJob.Seconds,Eraser,Modifiers,Contact,ActiveState);
+   LastStrokeContact=Contact;LastStrokeFrame=Time.frameCount;
+   var result=Paper.Stroke(a,b,speed,CurrentJob.Seconds,Eraser,Modifiers,LastStrokeContact,ActiveState);
+   Audio.TryCompletion(Paper.Drawing.Erased);
    Progress.Stroke(result,Mode,Definition.precision,distance);
    if(Supplied!=null){
     // The tiny supplied remainder is calibrated to this job's graphite, not blank travel.
@@ -159,7 +163,7 @@ namespace Keshiya {
   public void Finish(){if(CurrentJob.Complete(Paper)){CollectCrumbs();Economy.Wallet.CreditJob(Economy.JobId,CurrentJob.Result.Total);Progress.Complete(Economy.JobId,CurrentJob.Result,Definition.precision);Tools.Complete(Economy.JobId,WorkSession.Grade(CurrentJob.Result));if(BoardEnabled)Session.Finish(Economy.JobId,Definition,CurrentJob.Result,CurrentJob.Usage);External?.Completed();ReleaseSupply();}}
   public void Restart(){using(var timing=DevelopmentMetrics.Measure("job-switch")){Viewport?.ResetView();Assist?.ResetSample();CloseTrade();ReleaseSupply();Economy.BeginJob();Progress.BeginJob();SenseUntil=0;SenseHintUntil=0;SenseMessage="F：消し残し感知 / K：スキル";var old=Paper;Paper=CreatePaperMeasured();SetPaperArtwork();old.Dispose();CurrentJob=new Job(Config,Definition);CurrentJob.ChallengeMultiplier=Tools.loadout.limited?(Playtest?.fiveToolRewardMultiplier??1.15f):1;
    if(Definition.suppliedTool!=null){Supplied=new OwnedEraser{instanceId="supply-"+Economy.JobId,definitionId=Definition.suppliedTool.id,loan=true};Eraser=Definition.suppliedTool;ToolIndex=Catalog.Index(Eraser.id);ActiveState.DebugRemaining(Definition.suppliedRemaining,Eraser,Modifiers);Crumbs.SetTool(Eraser);}
-   Crumbs.Clear();Controller.ResetContact();Presentation.ClearFeedback();Audio.ResetFeedback();LastDamageTime=-10;LastProtectionTime=-10;SyncToolVisual();Presentation.Release();dirty=false;}}
+   Crumbs.Clear();Controller.ResetContact();Presentation.ClearFeedback();Audio.ResetFeedback();Audio.ResetCompletion();LastDamageTime=-10;LastProtectionTime=-10;SyncToolVisual();Presentation.Release();dirty=false;}}
   void SetPaperArtwork(){var art=Definition.artwork;if(art!=null){paperMaterial.shader=ArtworkShader;paperMaterial.SetTexture("_Paper",art.paper);paperMaterial.SetTexture("_Protected",art.protectedImage);paperMaterial.SetTexture("_Erasable",art.erasable);paperMaterial.SetTexture("_State",Paper.Texture);paperMaterial.SetFloat("_TearThreshold",Paper.TearThreshold);}else{paperMaterial.shader=PaperShader;paperMaterial.mainTexture=Paper.Texture;}transform.Find("Paper live surface").localScale=new Vector3(Paper.Size.x,Paper.Size.y,1);transform.Find("Paper backing").localScale=new Vector3(Paper.Size.x,.08f,Paper.Size.y);}
   void OnDestroy(){Paper?.Dispose();foreach(var m in materials)if(m!=null)Destroy(m);}
  }

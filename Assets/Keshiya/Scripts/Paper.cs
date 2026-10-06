@@ -64,7 +64,7 @@ namespace Keshiya
                 hash ^= hash >> 13;
                 grain[i] = (hash % 1024) / 1023f * 2 - 1;
             }
-            Texture = new Texture2D(w,h,TextureFormat.RGBA32,false,Layered) { name="Live graphite and paper" };
+            Texture = new Texture2D(w,h,TextureFormat.RGBA32,false,Layered) { name="Live graphite and paper", filterMode=Layered?FilterMode.Point:FilterMode.Bilinear, wrapMode=TextureWrapMode.Clamp };
             dirtyMaxX=w-1;dirtyMaxY=h-1;Refresh();
         }
 
@@ -103,7 +103,7 @@ namespace Keshiya
                 int y1 = Mathf.Min(Height-1,Mathf.CeilToInt(((center.y+bounds.y)/Size.y+.5f)*Height));
                 for (int y=y0; y<=y1; y++) for (int x=x0; x<=x1; x++)
                 {
-                    Vector2 point = new Vector2(((x+.5f)/Width-.5f)*Size.x,((y+.5f)/Height-.5f)*Size.y);
+                    Vector2 point = ContactFootprint.PixelCenter(x,y,Width,Height,Size);
                     float weight = footprint.Weight(point-p);
                     if (weight<=0) continue;
                     dirtyMinX=Mathf.Min(dirtyMinX,x);dirtyMaxX=Mathf.Max(dirtyMaxX,x);dirtyMinY=Mathf.Min(dirtyMinY,y);dirtyMaxY=Mathf.Max(dirtyMaxY,y);

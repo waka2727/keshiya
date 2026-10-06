@@ -12,6 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b930816c463224382bd9c95aab7739, type: 3}
   m_Name: External-TEST_001
   m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobDefinition
+  reactions:
+  - kind: 1
+    textId: JOB_TEST_001_REACTION_LOW_QUALITY
+  - kind: 2
+    textId: JOB_TEST_001_REACTION_LOW_QUALITY
+  - kind: 3
+    textId: JOB_TEST_001_REACTION_LOW_QUALITY
+  - kind: 4
+    textId: JOB_TEST_001_REACTION_LOW_QUALITY
+  - kind: 5
+    textId: JOB_TEST_001_REACTION_LOW_QUALITY
   content:
     clientId: CLIENT_TEST_001
     appearancePhase: unassigned
@@ -51,7 +62,7 @@ MonoBehaviour:
   category: "\u5168\u9762\u6D88\u53BB"
   suppliedTool: {fileID: 0}
   suppliedRemaining: 0.12
-  thankYou: "\u5BB6\u3082\u72AC\u3082\u3001\u307E\u305F\u63CF\u304F\u305D\u3046\u3067\u3059\u3002\u304D\u308C\u3044\u306A\u7D19\u306B\u623B\u3057\u3066\u304F\u308C\u3066\u3042\u308A\u304C\u3068\u3046\u3002"
+  thankYou: "\u5BB6\u3082\u732B\u3082\u3001\u307E\u305F\u63CF\u304F\u305D\u3046\u3067\u3059\u3002\u304D\u308C\u3044\u306A\u7D19\u306B\u623B\u3057\u3066\u304F\u308C\u3066\u3042\u308A\u304C\u3068\u3046\u3002"
   artwork: {fileID: 11400000, guid: 953168159274b014abf3663166d657a8, type: 2}
   externalTest: 1
   layoutVersion: 0

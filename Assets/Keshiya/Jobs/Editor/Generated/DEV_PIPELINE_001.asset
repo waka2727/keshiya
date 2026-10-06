@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b930816c463224382bd9c95aab7739, type: 3}
   m_Name: DEV_PIPELINE_001
   m_EditorClassIdentifier: Assembly-CSharp::Keshiya.JobDefinition
+  reactions: []
   content:
     clientId: CLIENT_DEV_PIPELINE
     appearancePhase: unassigned
