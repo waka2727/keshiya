@@ -12,7 +12,9 @@ namespace Keshiya {
   [Header("Shop / identity")]
   public string id, shortName, brand="消し屋道具店";
   [TextArea] public string description;
-  [Min(1)] public int price=160;
+  [Min(0)] public int price=160;
+  [Range(0,1)] public float initialRemaining=1,initialSharpness=1;
+  public EraserState CreateInitialState(){var state=new EraserState{allowExhaustion=true};state.SetInitialCondition(initialRemaining,initialSharpness,this);return state;}
   public Vector2 iconScale=Vector2.one;
   // Material yield is currently standard; amount/cohesion already distinguish ball production.
   public float ballAffinity=1;

@@ -20,7 +20,7 @@ MonoBehaviour:
   recommended: "\u5927\u578B\u3001\u666E\u901A\u3001\u7802\u6D88\u3057"
   unlockRank: 
   difficulty: 1
-  baseReward: 2300
+  baseReward: 1150
   referenceSeconds: 360
   requiredErasure: 0.95
   paper: {fileID: 11400000, guid: ac9718ea560a2a249bc8d255fa5910bd, type: 2}

@@ -1,3 +1,5 @@
+> 更新注記：以下は3cf6182時点の記録／DRAFT。ユーザーの追加指示で基本報酬半額と格安消し片の無料化・弱体化を採用した。詳細は[追加調整報告](Adjustment/ImplementationReport.md)。その他のDRAFTは未採用。
+
 # External Test 01 フィードバック反映 / 0.8.2
 
 ## Gitと基準版の保全

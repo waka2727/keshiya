@@ -10,7 +10,7 @@
   "writingAsset": "Assets/Keshiya/Resources/Writing-hb.asset",
   "runtimeAsset": "Assets/Keshiya/Resources/External-TEST_002.asset",
   "artworkFolder": "Assets/Keshiya/ExternalArt/TEST_002",
-  "baseReward": 1600,
+  "baseReward": 800,
   "difficulty": 4,
   "precision": true,
   "requiredErasure": 0.95,

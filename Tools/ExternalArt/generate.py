@@ -111,6 +111,9 @@ def make003():
  olda=np.where(detail,olda,olda*.16).astype(np.uint8);old.putalpha(Image.fromarray(olda));d.erase=Image.alpha_composite(old,d.erase)
  # Exclude a 24-pixel zone around ink. The same trimming is applied to visual and official mask.
  safety=d.keep.getchannel('A').point(lambda x:255 if x>95 else 0).filter(ImageFilter.MaxFilter(49));a=ImageChops.multiply(d.erase.getchannel('A'),ImageChops.invert(safety));d.erase.putalpha(a)
+ # Additional feedback: no required graphite inside the dense hand/strap panel.
+ # Keep completed ink and ProtectMask intact; other facial details remain precise.
+ a=d.erase.getchannel('A');ImageDraw.Draw(a).rectangle((1640,1030,2320,1830),fill=0);d.erase.putalpha(a)
  return d
 
 def make004():

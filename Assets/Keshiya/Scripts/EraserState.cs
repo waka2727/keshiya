@@ -19,6 +19,10 @@ namespace Keshiya
             float capacity=definition.durability*definition.equipment.durability*skills.durability;
             return Exhausted?0:Mathf.Clamp(1-UsedUnits/Mathf.Max(.01f,capacity),allowExhaustion?0:definition.minimumRemaining,1);
         }
+        public void SetInitialCondition(float remaining,float sharpness,EraserDefinition definition){
+            UsedUnits=definition.durability*definition.equipment.durability*(1-Mathf.Clamp01(remaining));
+            CornerSharpness=Mathf.Clamp01(sharpness);exhausted=remaining<=0;Travel=0;
+        }
         public void DebugRemaining(float fraction,EraserDefinition definition,PerformanceModifiers skills){if(float.IsNaN(fraction))return;fraction=Mathf.Clamp01(fraction);float capacity=definition.durability*definition.equipment.durability*skills.durability;UsedUnits=capacity*(1-fraction);exhausted=fraction==0;}
         public void DebugSharpness(float fraction){if(!float.IsNaN(fraction))CornerSharpness=Mathf.Clamp01(fraction);}
         public void Use(float distance,ContactMode mode,EraserDefinition definition,PerformanceModifiers skills)

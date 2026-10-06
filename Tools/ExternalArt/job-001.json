@@ -2,7 +2,7 @@
   "client": "子どもの親",
   "paper": "ordinary",
   "writing": "hb",
-  "baseReward": 800,
+  "baseReward": 400,
   "difficulty": 1,
   "clientQuote": "机の上に置いていた紙です。いつの間にか、町がひとつできていました。全部消して、また使えるようにお願いします。",
   "instruction": "鉛筆の落書きを全部消してください。",

@@ -59,7 +59,7 @@ namespace Keshiya
             while(!Game.CurrentJob.CanComplete(Game.Paper)&&passes++<15){for(float y=-2.4f;y<=2.4f;y+=.2f){Game.Rub(new Vector2(-3.4f,y),new Vector2(3.4f,y),3);yield return null;}}
             Check(Game.CurrentJob.CanComplete(Game.Paper)&&Game.Paper.PeakDamage==0,"Original broad job still completes safely with economy enabled");
             long priorMoney=e.Wallet.Balance;Game.CurrentJob.Tick(10000);Game.Finish();
-            Check(Game.CurrentJob.Completed&&Game.CurrentJob.Result.basic==1000&&Game.CurrentJob.Result.speed==0,"Economy adds no time limit or slow-work deduction");
+            Check(Game.CurrentJob.Completed&&Game.CurrentJob.Result.basic==500&&Game.CurrentJob.Result.speed==0,"Economy adds no time limit or slow-work deduction");
             Check(e.Wallet.Balance==priorMoney+Game.CurrentJob.Result.Total&&e.Wallet.JobIncome==Game.CurrentJob.Result.Total,"Job reward is deposited separately on completion");
             long settled=e.Wallet.Balance;Game.Finish();Check(e.Wallet.Balance==settled,"Repeated completion cannot pay a job twice");
             Check(e.JobSales==paid&&e.Wallet.CrumbIncome==paid,"Result ledger keeps crumb sales distinct from job reward");yield return Capture("06-job-result");

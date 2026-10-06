@@ -104,7 +104,7 @@ namespace Keshiya
             timer.Stop();
             Check(Game.CurrentJob.CanComplete(Game.Paper)&&Game.Paper.PeakDamage==0,"Full safe erasure still reaches the 95 percent goal without damage");
             Game.CurrentJob.Tick(10000);Game.Finish();
-            Check(Game.CurrentJob.Completed&&Game.CurrentJob.Result.basic==1000&&Game.CurrentJob.Result.speed==0,"Slow job still completes with full base reward and no penalty");
+            Check(Game.CurrentJob.Completed&&Game.CurrentJob.Result.basic==500&&Game.CurrentJob.Result.speed==0,"Slow job still completes with full base reward and no penalty");
             Check(!Game.Audio.Rubbing&&!input.Pressing,"Completing a job releases the eraser and stops rubbing audio");
             yield return Capture("08-result");
             Game.Restart();

@@ -51,7 +51,7 @@ namespace Keshiya.Editor
                         paper.Stroke(path[k-1],path[k],3,passes,tool,m,tool.Contact(m,ContactMode.Corner,state,0));state.Use(Vector2.Distance(path[k-1],path[k]),ContactMode.Corner,tool,m);
                     }
                     Check(paper.Drawing.Erased>=.95f&&paper.Protection.Loss==0&&paper.PeakDamage==0,"Wearing corner erases only B safely: "+tool.name);
-                    var work=new Job(c,job);work.StartWork();work.Tick(100000);Check(work.Complete(paper)&&work.Result.basic==1000&&work.Result.speed==0,"Letter completion remains unlimited and full-base-pay: "+tool.name);
+                    var work=new Job(c,job);work.StartWork();work.Tick(100000);Check(work.Complete(paper)&&work.Result.basic==500&&work.Result.speed==0,"Letter completion remains unlimited and full-base-pay: "+tool.name);
                 }
             }
             using(var paper=new Paper(c,.1f,job)){

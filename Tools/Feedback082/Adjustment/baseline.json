@@ -1,0 +1,269 @@
+{
+  "commit": "3cf6182468ce7ac5bb1fdf1bcf8b20297411ad6f",
+  "rewards": [
+    {
+      "id": "corrections",
+      "path": "Assets/Keshiya/Resources/CorrectionsJob.asset",
+      "old": 2400,
+      "new": 1200
+    },
+    {
+      "id": "draft",
+      "path": "Assets/Keshiya/Resources/DraftJob.asset",
+      "old": 1800,
+      "new": 900
+    },
+    {
+      "id": "TEST_001",
+      "path": "Assets/Keshiya/Resources/External-TEST_001.asset",
+      "old": 800,
+      "new": 400
+    },
+    {
+      "id": "TEST_002",
+      "path": "Assets/Keshiya/Resources/External-TEST_002.asset",
+      "old": 1600,
+      "new": 800
+    },
+    {
+      "id": "TEST_003",
+      "path": "Assets/Keshiya/Resources/External-TEST_003.asset",
+      "old": 2600,
+      "new": 1300
+    },
+    {
+      "id": "TEST_004",
+      "path": "Assets/Keshiya/Resources/External-TEST_004.asset",
+      "old": 2400,
+      "new": 1200
+    },
+    {
+      "id": "TEST_005",
+      "path": "Assets/Keshiya/Resources/External-TEST_005.asset",
+      "old": 1900,
+      "new": 950
+    },
+    {
+      "id": "TEST_006",
+      "path": "Assets/Keshiya/Resources/External-TEST_006.asset",
+      "old": 2200,
+      "new": 1100
+    },
+    {
+      "id": "TEST_007",
+      "path": "Assets/Keshiya/Resources/External-TEST_007.asset",
+      "old": 1400,
+      "new": 700
+    },
+    {
+      "id": "TEST_008",
+      "path": "Assets/Keshiya/Resources/External-TEST_008.asset",
+      "old": 2100,
+      "new": 1050
+    },
+    {
+      "id": "child",
+      "path": "Assets/Keshiya/Resources/NormalJob.asset",
+      "old": 1000,
+      "new": 500
+    },
+    {
+      "id": "pattern",
+      "path": "Assets/Keshiya/Resources/PatternJob.asset",
+      "old": 1400,
+      "new": 700
+    },
+    {
+      "id": "letter",
+      "path": "Assets/Keshiya/Resources/PrecisionJob.asset",
+      "old": 1000,
+      "new": 500
+    },
+    {
+      "id": "close-letter",
+      "path": "Assets/Keshiya/Resources/Specialist-close-letter.asset",
+      "old": 1700,
+      "new": 850
+    },
+    {
+      "id": "color-doodle",
+      "path": "Assets/Keshiya/Resources/Specialist-color-doodle.asset",
+      "old": 1600,
+      "new": 800
+    },
+    {
+      "id": "extra-stroke",
+      "path": "Assets/Keshiya/Resources/Specialist-extra-stroke.asset",
+      "old": 2100,
+      "new": 1050
+    },
+    {
+      "id": "large-study",
+      "path": "Assets/Keshiya/Resources/Specialist-large-study.asset",
+      "old": 2200,
+      "new": 1100
+    },
+    {
+      "id": "manga",
+      "path": "Assets/Keshiya/Resources/Specialist-manga.asset",
+      "old": 2300,
+      "new": 1150
+    },
+    {
+      "id": "old-letter",
+      "path": "Assets/Keshiya/Resources/Specialist-old-letter.asset",
+      "old": 2100,
+      "new": 1050
+    },
+    {
+      "id": "ruled-margin",
+      "path": "Assets/Keshiya/Resources/Specialist-ruled-margin.asset",
+      "old": 1700,
+      "new": 850
+    },
+    {
+      "id": "childs-gift",
+      "path": "Assets/Keshiya/Resources/WorldJob-childs-gift.asset",
+      "old": 1900,
+      "new": 950
+    },
+    {
+      "id": "exam-corrections",
+      "path": "Assets/Keshiya/Resources/WorldJob-exam-corrections.asset",
+      "old": 2000,
+      "new": 1000
+    },
+    {
+      "id": "giant-doodle",
+      "path": "Assets/Keshiya/Resources/WorldJob-giant-doodle.asset",
+      "old": 2300,
+      "new": 1150
+    },
+    {
+      "id": "late-manga",
+      "path": "Assets/Keshiya/Resources/WorldJob-late-manga.asset",
+      "old": 2600,
+      "new": 1300
+    },
+    {
+      "id": "named-remainder",
+      "path": "Assets/Keshiya/Resources/WorldJob-named-remainder.asset",
+      "old": 1600,
+      "new": 800
+    },
+    {
+      "id": "recipe-notes",
+      "path": "Assets/Keshiya/Resources/WorldJob-recipe-notes.asset",
+      "old": 2200,
+      "new": 1100
+    },
+    {
+      "id": "shop-banner",
+      "path": "Assets/Keshiya/Resources/WorldJob-shop-banner.asset",
+      "old": 1700,
+      "new": 850
+    },
+    {
+      "id": "unsent-letter",
+      "path": "Assets/Keshiya/Resources/WorldJob-unsent-letter.asset",
+      "old": 1300,
+      "new": 650
+    }
+  ],
+  "tools": [
+    {
+      "path": "Assets/Keshiya/Resources/BudgetSoftEraser.asset",
+      "sha256": "a27a2a2d9ea9fb8cfcfbf0a5f30a5443fe3310f282438156e3d2b27a9934eef9",
+      "id": "budget-soft"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/DraftingEraser.asset",
+      "sha256": "e11ba917ab667acd92ce9e4cda1499fada63c26fa5a2f663882c196626c20751",
+      "id": "drafting"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/LargeEraser.asset",
+      "sha256": "ff2f7c4b589c1a76af7fa390b1e1cf4c35076b4fda1d6b2d21f32f947001be69",
+      "id": "large"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/OrdinaryEraser.asset",
+      "sha256": "72a72284162756c0e16f1e383ed2b9330d80873ca0ec44c0d739cac9df0006a7",
+      "id": "ordinary"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/PremiumEraser.asset",
+      "sha256": "07691753dad74333d3bdac672bffec54e5069c7d25f63534c60da70a06086098",
+      "id": "premium"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/SandEraser.asset",
+      "sha256": "4cb27cf661db042c959b89632635b136d6b6d380014fa5ea040da6973f6322df",
+      "id": "sand"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/SoftEraser.asset",
+      "sha256": "370a099cdd8d2e30588b286ddfbb3a0a554852569bb5af94648fe2674d8e7fbc",
+      "id": "soft"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-baguette.asset",
+      "sha256": "5ef2cdc18d320a95774f7d9a82e1ee056d7e55ff03b3444b451d472ea4960aaf",
+      "id": "baguette"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-bread-special.asset",
+      "sha256": "4b3c89f1dcdcc2db122422378bf7243d5dc5ed99d35731f6e2a23aa64706d721",
+      "id": "bread-special"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-carrot.asset",
+      "sha256": "8bd8e0502373e06b3eb5de8676eb350a89716d80b43dd9cf696b4312f2a6ae89",
+      "id": "carrot"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-cat.asset",
+      "sha256": "927458253450571a94952c2bddfa69895071dd4b2e16df0328f137ee2f1a8529",
+      "id": "cat"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-croissant.asset",
+      "sha256": "de1027313325eac69dae5dd33ed8d8121fad50a9a7b529572f52d83563d50990",
+      "id": "croissant"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-kneaded.asset",
+      "sha256": "ca7fcc4e5939be0ccaf5e39ee8955eafb0a6a2589072fcd583c475a337cce6f7",
+      "id": "kneaded"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-named-supply.asset",
+      "sha256": "a4ef901edf767ba010d9982bfdea1d5322c768fd92cff004790c25c84e87abdf",
+      "id": "named-supply"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-rabbit.asset",
+      "sha256": "b766eddee01adf18518b8fd642977cb62ec6664ce38790093f5b642e753e2055",
+      "id": "rabbit"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-radish.asset",
+      "sha256": "096381e66b7cf20a62a7f7486ab553e414d7d11948cfd00e2371553aa07b7e14",
+      "id": "radish"
+    },
+    {
+      "path": "Assets/Keshiya/Resources/WorldTool-toast-collect.asset",
+      "sha256": "7ce19602a55a2b4cf2e8c2ec9dcc417dcb17a6ef4e605de54f5af3fdf2ba0440",
+      "id": "toast-collect"
+    }
+  ],
+  "mangaOldTotalMass": 1490243,
+  "mangaOldHandMass": 45769,
+  "mangaHashes": {
+    "Protected": "eb37035aa7e37e53dce60b1e0f8c6bfb83538f906017c85093ffd12e42b4d839",
+    "ProtectMask": "6e039c37afc05ffc9e4e5f6b9b245b1b4f0093a9ba6a28ab5e480100097f7412",
+    "CompletePreview": "dab41e8b89fab1a425e540b464df43875ec2d281fa101133bc33f8abc8f96517",
+    "Paper": "e402e82927e69b826db4bf778db42e8e0b5509eef59efec9282e38eaf65ba5fa",
+    "EraseMask": "58438fd08117a014ac522f3a39330fc2a64ead5f4ae0712da79c10c3ee074c18"
+  }
+}

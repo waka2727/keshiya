@@ -11,11 +11,11 @@
         },
         {
             "id": "ITEM_BudgetSoftEraser_description",
-            "value": "とにかく安い。すぐ減る。なぜか消しカスだけは妙に綺麗につながる。"
+            "value": "使い古しをちぎった小さな消しゴム片。無料でどうぞ。消えにくく、角も丸く、すぐ減ります。何個か受け取って、交換しながら使ってください。"
         },
         {
             "id": "ITEM_BudgetSoftEraser_displayName",
-            "value": "格安やわらか消し"
+            "value": "格安消しゴム片"
         },
         {
             "id": "ITEM_BudgetSoftEraser_iconMotif",
@@ -27,7 +27,7 @@
         },
         {
             "id": "ITEM_BudgetSoftEraser_role",
-            "value": "長尺カス / 弱くて減りやすい"
+            "value": "無料の小片 / 消えにくく交換が必要"
         },
         {
             "id": "ITEM_BudgetSoftEraser_series",
@@ -35,7 +35,7 @@
         },
         {
             "id": "ITEM_BudgetSoftEraser_shortName",
-            "value": "格安やわらか"
+            "value": "格安消し片"
         },
         {
             "id": "ITEM_DraftingEraser_brand",

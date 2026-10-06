@@ -53,7 +53,7 @@ MonoBehaviour:
   recommended: "\u666E\u901A\u30FB\u5927\u578B"
   unlockRank: 
   difficulty: 1
-  baseReward: 800
+  baseReward: 400
   referenceSeconds: 240
   requiredErasure: 0.95
   paper: {fileID: 11400000, guid: cf7835d6fe9770042be2813db39d12da, type: 2}

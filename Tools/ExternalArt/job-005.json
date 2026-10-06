@@ -2,7 +2,7 @@
   "client": "放課後の学生",
   "paper": "ordinary",
   "writing": "2b",
-  "baseReward": 1900,
+  "baseReward": 950,
   "difficulty": 2,
   "clientQuote": "この消しゴムを、仕事で使い切ってほしいんです。名前は見なくて大丈夫です。ちゃんと紙を消して使ってくださいね。",
   "instruction": "支給された名前入り消しゴムで鉛筆跡を消し、残量を使い切ってください。",

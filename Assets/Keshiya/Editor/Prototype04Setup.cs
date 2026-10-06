@@ -12,7 +12,7 @@ namespace Keshiya.Editor {
    string[] quotes={"また描きたいそうなので、きれいにしてください。","急ぎません。左の文字には触れないようお願いします。","かなり広いですが、下書きを全部お願いします。","薄い紙なので、一つずつ丁寧にお願いします。","まっさらな紙に戻して、別の模様を考えたいんです。"};
    string[] features={"広い落書き","一文字の精密修正","重なった大量の線","複数箇所・保護対象あり","横に続く下書き"};
    string[] recommended={"普通消し / 面","やわらか消し / 角","普通消し、慎重な砂消し / 面","やわらか消し / 辺・角","普通消し、やわらか消し / 面"};
-   int[] rewards={1000,1000,1800,2400,1400},difficulty={1,3,2,4,2};float[] times={120,150,210,240,180};
+   int[] rewards={500,500,900,1200,700},difficulty={1,3,2,4,2};float[] times={120,150,210,240,180};
    for(int i=0;i<5;i++){var j=jobs[i];if(string.IsNullOrEmpty(j.id)){j.id=ids[i];j.displayName=names[i];j.client=clients[i];j.summary=summaries[i];j.clientQuote=quotes[i];j.feature=features[i];j.recommended=recommended[i];j.difficulty=difficulty[i];j.baseReward=rewards[i];j.referenceSeconds=i==1?120:times[i];j.requiredErasure=.95f;
     if(i==0)j.instruction="猫の鉛筆画を95%以上消してください。";
     if(i>=2){j.instruction=summaries[i]+"\n鉛筆を95%以上消すと完了です。";j.customDrawing=true;j.paperName=i==3?"薄い教材用紙":"丈夫な普通紙";j.paperFragility=i==3?2.2f:1;j.precision=i==3;j.letterCorrection=i==3;j.majorLoss=.2f;

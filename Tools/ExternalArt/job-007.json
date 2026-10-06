@@ -2,7 +2,7 @@
   "client": "手紙を持ってきた人",
   "paper": "fine",
   "writing": "hb",
-  "baseReward": 1400,
+  "baseReward": 700,
   "difficulty": 1,
   "clientQuote": "この手紙は、渡さないことにしました。本文を全部消してください。紙だけは、また使おうと思います。",
   "instruction": "手紙の本文をすべて消してください。残す文字はありません。",

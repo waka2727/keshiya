@@ -12,18 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581883b43450f3449b3c1e23334e7421, type: 3}
   m_Name: BudgetSoftEraser
   m_EditorClassIdentifier: Assembly-CSharp::Keshiya.EraserDefinition
+  category: "\u5B9F\u7528\u54C1"
+  series:
+  iconMotif:
+  questOnly: 0
+  specialKind: 0
+  maturePowerMultiplier: 4
+  adsorptionCapacity: 0.35
+  dirtyPowerFloor: 0.65
+  toastDistance: 90
+  toastPowerGain: 0.45
+  toastDamageGain: 1.6
+  usedColor: {r: 0.25, g: 0.23, b: 0.2, a: 1}
   id: budget-soft
-  shortName: "\u683C\u5B89\u3084\u308F\u3089\u304B"
+  shortName: "\u683C\u5B89\u6D88\u3057\u7247"
   brand: "\u6D88\u3057\u5C4B\u9053\u5177\u5E97"
-  description: "\u3068\u306B\u304B\u304F\u5B89\u3044\u3002\u3059\u3050\u6E1B\u308B\u3002\u306A\u305C\u304B\u6D88\u3057\u30AB\u30B9\u3060\u3051\u306F\u5999\u306B\u7DBA\u9E97\u306B\u3064\u306A\u304C\u308B\u3002"
-  price: 90
+  description: "\u4F7F\u3044\u53E4\u3057\u3092\u3061\u304E\u3063\u305F\u5C0F\u3055\u306A\u6D88\u3057\u30B4\u30E0\u7247\u3002\u7121\u6599\u3067\u3069\u3046\u305E\u3002\u6D88\u3048\u306B\u304F\u304F\u3001\u89D2\u3082\u4E38\u304F\u3001\u3059\u3050\u6E1B\u308A\u307E\u3059\u3002\u4F55\u500B\u304B\u53D7\u3051\u53D6\u3063\u3066\u3001\u4EA4\u63DB\u3057\u306A\u304C\u3089\u4F7F\u3063\u3066\u304F\u3060\u3055\u3044\u3002"
+  price: 0
+  initialRemaining: 0.35
+  initialSharpness: 0.3
   iconScale: {x: 0.8, y: 0.95}
   ballAffinity: 1
-  displayName: "\u683C\u5B89\u3084\u308F\u3089\u304B\u6D88\u3057"
-  erasePower: 0.62
+  displayName: "\u683C\u5B89\u6D88\u3057\u30B4\u30E0\u7247"
+  erasePower: 0.4
   paperDamageMultiplier: 0.14
-  radius: 0.25
-  crumbAmount: 1.5
+  radius: 0.2
+  crumbAmount: 0.65
   contactProfile: {fileID: 11400000, guid: 2a7654f64233d2f41b797c043e40e390, type: 2}
   edgeProfile: {fileID: 11400000, guid: 68561d666e864954bb0f96e122fe1197, type: 2}
   cornerProfile: {fileID: 11400000, guid: 7a233820b46ab6e4184515245010c3b1, type: 2}
@@ -31,8 +45,8 @@ MonoBehaviour:
   edgeCornerWear: 0.15
   minimumSharpness: 0.1
   durability: 60
-  wearRate: 0.75
-  cornerWearRate: 0.05
+  wearRate: 0.9
+  cornerWearRate: 0.065
   highSpeedRisk: 0.55
   minimumRemaining: 0.15
   cornerSpread: 0.65
@@ -44,10 +58,10 @@ MonoBehaviour:
   thinPaperStress: 0.15
   thinPaperPickup: 1.3
   protectedInkAbrasion: 0.4
-  crumbCohesion: 1
-  longCrumbPotential: 2.15
+  crumbCohesion: 0.5
+  longCrumbPotential: 0.6
   crumbValueMultiplier: 1
-  role: "\u9577\u5C3A\u30AB\u30B9 / \u5F31\u304F\u3066\u6E1B\u308A\u3084\u3059\u3044"
+  role: "\u7121\u6599\u306E\u5C0F\u7247 / \u6D88\u3048\u306B\u304F\u304F\u4EA4\u63DB\u304C\u5FC5\u8981"
   specialtyVersion: 0
   equipment:
     erasePower: 1

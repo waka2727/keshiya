@@ -21,7 +21,7 @@ MonoBehaviour:
   initialPreview: {fileID: 2800000, guid: ef0a9d01e7bb1ef429ab317817c7432e, type: 3}
   worldSize: {x: 5, y: 7.07258}
   sourceFolder: Tools/ExternalArt/Source/TEST_003
-  manifestHash: 62bbbffb6ca483473ed9ba7c26d03cc0
+  manifestHash: 94d3b48d3b5ed6f55b342a1499483b96
   testStrokes:
   - workMode: 0
     workAngle: 0
@@ -806,11 +806,6 @@ MonoBehaviour:
   - workMode: 0
     workAngle: 0
     points:
-    - {x: 1.25, y: 0.6532257}
-    - {x: 1.2620968, y: 0.6532257}
-  - workMode: 0
-    workAngle: 0
-    points:
     - {x: -2.298387, y: 0.62499994}
     - {x: -2.2903225, y: 0.62499994}
   - workMode: 0
@@ -836,11 +831,6 @@ MonoBehaviour:
   - workMode: 0
     workAngle: 0
     points:
-    - {x: 1.282258, y: 0.62499994}
-    - {x: 1.298387, y: 0.62499994}
-  - workMode: 0
-    workAngle: 0
-    points:
     - {x: -2.298387, y: 0.59677416}
     - {x: -2.2903225, y: 0.59677416}
   - workMode: 0
@@ -861,16 +851,6 @@ MonoBehaviour:
   - workMode: 0
     workAngle: 0
     points:
-    - {x: 1.2540323, y: 0.59677416}
-    - {x: 1.2580645, y: 0.59677416}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.3185484, y: 0.59677416}
-    - {x: 1.3346775, y: 0.59677416}
-  - workMode: 0
-    workAngle: 0
-    points:
     - {x: -2.298387, y: 0.5685483}
     - {x: -2.2903225, y: 0.5685483}
   - workMode: 0
@@ -886,43 +866,13 @@ MonoBehaviour:
   - workMode: 0
     workAngle: 0
     points:
-    - {x: 1.2782258, y: 0.5685483}
-    - {x: 1.2943548, y: 0.5685483}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.358871, y: 0.5685483}
-    - {x: 1.375, y: 0.5685483}
-  - workMode: 0
-    workAngle: 0
-    points:
     - {x: -2.298387, y: 0.54032254}
     - {x: -2.2903225, y: 0.54032254}
   - workMode: 0
     workAngle: 0
     points:
-    - {x: 1.3064516, y: 0.54032254}
-    - {x: 1.3467742, y: 0.54032254}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.391129, y: 0.54032254}
-    - {x: 1.4153225, y: 0.54032254}
-  - workMode: 0
-    workAngle: 0
-    points:
     - {x: -2.298387, y: 0.5120967}
     - {x: -2.2903225, y: 0.5120967}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.3467742, y: 0.5120967}
-    - {x: 1.3830645, y: 0.5120967}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.4314516, y: 0.5120967}
-    - {x: 1.4475807, y: 0.5120967}
   - workMode: 0
     workAngle: 0
     points:
@@ -936,33 +886,8 @@ MonoBehaviour:
   - workMode: 0
     workAngle: 0
     points:
-    - {x: 1.3830645, y: 0.48387092}
-    - {x: 1.423387, y: 0.48387092}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.4717742, y: 0.48387092}
-    - {x: 1.4879032, y: 0.48387092}
-  - workMode: 0
-    workAngle: 0
-    points:
     - {x: -2.298387, y: 0.4556451}
     - {x: -2.2903225, y: 0.4556451}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.358871, y: 0.4556451}
-    - {x: 1.3669355, y: 0.4556451}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.4193548, y: 0.4556451}
-    - {x: 1.4435484, y: 0.4556451}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.5080645, y: 0.4556451}
-    - {x: 1.5241935, y: 0.4556451}
   - workMode: 0
     workAngle: 0
     points:
@@ -973,11 +898,6 @@ MonoBehaviour:
     points:
     - {x: -2.298387, y: 0.39919353}
     - {x: -2.2903225, y: 0.39919353}
-  - workMode: 0
-    workAngle: 0
-    points:
-    - {x: 1.5887097, y: 0.39919353}
-    - {x: 1.5967742, y: 0.39919353}
   - workMode: 0
     workAngle: 0
     points:

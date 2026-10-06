@@ -17,7 +17,7 @@ namespace Keshiya.Editor {
    skills.Find(SkillKind.PaperCare).description="紙の傷みを抑える。砂消しには軽減が控えめに効く。";
    skills.Find(SkillKind.InkCare).description="接触面の端でかすった時を救済。中央で繰り返し擦れば傷む。";
    skills.Find(SkillKind.Sense).description="Fで残る鉛筆を一時表示。高Lvほど早い段階から長く感知。";
-   float[] wear={.18f,.23f,.16f,.21f,.48f,.12f,.75f};float[] corners={.024f,.032f,.018f,.040f,.030f,.0015f,.050f};
+   float[] wear={.18f,.23f,.16f,.21f,.48f,.12f,.90f};float[] corners={.024f,.032f,.018f,.040f,.030f,.0015f,.065f};
    string[] ids={"ordinary","soft","sand","drafting","large","premium","budget-soft"};
    for(int i=0;i<ids.Length;i++){var d=game.Catalog.Find(ids[i]);d.wearRate=wear[i];d.cornerWearRate=corners[i];d.edgeCornerWear=.15f;d.minimumSharpness=.10f;EditorUtility.SetDirty(d);}
    var sand=game.Catalog.Find("sand");sand.paperCareResponse=8f/11f;EditorUtility.SetDirty(sand);

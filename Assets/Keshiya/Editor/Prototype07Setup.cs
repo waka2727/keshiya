@@ -25,7 +25,7 @@ namespace Keshiya.Editor {
    string[] quotes={"文字の間隔が狭くて、自分では隣まで消しそうなんです。","清書用の上質紙です。小さい一画だけ、お願いします。","罫線はこの向きのまま残したいんです。","ペン線が気に入っているので、大切に残してください。","紙は丈夫です。また同じ紙に描き直したくて。","昔の手紙なので、本文も紙も大切にしてもらえると。","少し落ちにくいみたいです。急がなくて大丈夫です。"};
    string[] features={"隣接文字 / 小さな修正","一画修正 / 上質紙","方向のある細長い跡","広い部分とペン線の近く","広範囲 / 濃い線","薄い古紙 / 本文を保護","広範囲 / 消えにくい色"};
    string[] recommend={"普通、細型製図、高級製図","細型製図、普通、高級製図","普通、細型製図","普通、細型製図、高級製図","大型、普通、砂消し","やわらか、高級製図、普通","普通、大型、砂消し"};
-   int[] paperIndex={1,3,0,3,2,4,0},writeIndex={3,3,0,0,2,0,4},reward={1700,2100,1700,2300,2200,2100,1600},difficulty={4,4,3,4,2,5,3};
+   int[] paperIndex={1,3,0,3,2,4,0},writeIndex={3,3,0,0,2,0,4},reward={850,1050,850,1150,1100,1050,800},difficulty={4,4,3,4,2,5,3};
    for(int i=0;i<7;i++){var j=Get<JobDefinition>("Specialist-"+jobIds[i],out bool fresh);if(fresh){j.id=jobIds[i];j.displayName=jobNames[i];j.client=clients[i];j.summary=summary[i];j.clientQuote=quotes[i];j.instruction=summary[i];j.feature=features[i];j.recommended=recommend[i];j.paper=papers[paperIndex[i]];j.writing=writing[writeIndex[i]];j.paperName=j.paper.displayName;j.paperFragility=j.paper.fragility;j.precision=i!=4&&i!=6;j.category=j.precision?"精密":"広範囲";j.difficulty=difficulty[i];j.baseReward=reward[i];j.referenceSeconds=i==3||i==4?300:180;j.requiredErasure=.95f;j.customDrawing=true;j.majorLoss=.2f;j.protectionBonus=j.precision?400:0;
     var target=new List<JobPath>();var protect=new List<JobPath>();
     if(i==0){Add(target,LetterLayout.Target,new Vector2(.044f,-.076f),.4f);Add(protect,LetterLayout.Protected,Vector2.zero,.6f);Add(protect,LetterLayout.Protected,new Vector2(.65f,0),.6f);j.pressure=.5f;}

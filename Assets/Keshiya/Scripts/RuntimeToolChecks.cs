@@ -62,7 +62,7 @@ namespace Keshiya
             Game.BlowCrumbs();yield return new WaitForSecondsRealtime(.7f);
             Check(Game.Crumbs.ActiveCount==0,"Space action still blows crumbs away");yield return Capture("06-precision-clean");
             Game.CurrentJob.Tick(10000);Game.Finish();
-            Check(Game.CurrentJob.Completed&&Game.CurrentJob.Result.basic==1000&&Game.CurrentJob.Result.speed==0,"Precision result preserves no-time-limit/full-base-pay rule");
+            Check(Game.CurrentJob.Completed&&Game.CurrentJob.Result.basic==Game.Definition.baseReward&&Game.CurrentJob.Result.speed==0,"Precision result preserves no-time-limit/full-base-pay rule");
             Check(Game.CurrentJob.Result.protection==Game.Definition.protectionBonus,"Clean precision result grants protected-line bonus");yield return Capture("07-precision-result");
             Game.SelectJob(0);Game.Jobs[1]=playableJob;Destroy(legacyJob);Game.SelectMode(ContactMode.Face);Game.SelectTool(0);
             Check(Game.Paper.Protection==null&&Game.Paper.Drawing.Erased==0,"Switch back restores original broad job");

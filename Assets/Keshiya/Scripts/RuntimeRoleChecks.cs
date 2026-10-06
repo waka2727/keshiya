@@ -15,7 +15,12 @@ namespace Keshiya
         {
             directory=Path.Combine(Application.dataPath,"../TestResults-0.2.1");Directory.CreateDirectory(directory);
             Game.Controller.ExternalInput=true;yield return new WaitForSecondsRealtime(.8f);
-            var hud=Game.GetComponent<PrototypeHUD>();Check(hud.ToolSlotCount==3,"Three actual HUD tool slots initialized");
+            var hud=Game.GetComponent<PrototypeHUD>();
+            // GUI initialization occurs on its first render, not on a fixed wall-clock delay.
+            float readyDeadline=Time.realtimeSinceStartup+8;
+            while(hud.ToolSlotCount==0&&Time.realtimeSinceStartup<readyDeadline)yield return null;
+            Check(hud.ToolSlotCount==3,"Three actual HUD tool slots initialized");
+            if(hud.ToolSlotCount!=3){File.WriteAllText(Path.Combine(directory,"runtime.txt"),report+$"Checks={checks}; Failures={failures}\n");Application.Quit(1);yield break;}
             for(int i=0;i<3;i++){
                 Game.Controller.HandleKeyDown((KeyCode)((int)KeyCode.Alpha1+i));
                 Check(Game.ToolIndex==i&&hud.HighlightedTool==i,"Number-key routing switches and selects visual slot "+i);
@@ -50,7 +55,7 @@ namespace Keshiya
             Check(Game.Crumbs.ActiveCount==0,"Space key routing clears crumbs");yield return Capture("05-letter-clean");
             bool muted=Game.Audio.Muted;Game.Controller.HandleKeyDown(KeyCode.M);Check(Game.Audio.Muted!=muted,"M key routing toggles mute");
             Game.CurrentJob.Tick(10000);Game.Finish();
-            Check(Game.CurrentJob.Completed&&Game.CurrentJob.Result.basic==1000&&Game.CurrentJob.Result.speed==0,"Unlimited-time letter result retains full base pay");yield return Capture("06-letter-result");
+            Check(Game.CurrentJob.Completed&&Game.CurrentJob.Result.basic==500&&Game.CurrentJob.Result.speed==0,"Unlimited-time letter result retains full base pay");yield return Capture("06-letter-result");
             File.WriteAllText(Path.Combine(directory,"runtime.txt"),report+$"Checks={checks}; Failures={failures}; LetterPasses={passes}\n");Application.Quit(failures==0?0:1);
         }
     }
